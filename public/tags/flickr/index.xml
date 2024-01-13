@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Flickr on Moorberry.net</title>
+    <link>https://moorberry.net/tags/flickr/</link>
+    <description>Recent content in Flickr on Moorberry.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 24 Mar 2010 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://moorberry.net/tags/flickr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PHP Flickr Gallery</title>
+      <link>https://moorberry.net/blog/php-flickr-gallery/</link>
+      <pubDate>Wed, 24 Mar 2010 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/php-flickr-gallery/</guid>
+      <description>&lt;p&gt;In my search for finding a simple solution to any problem, I usually cross many and many blogs and articles, discussing whatever topic. But with so much detail that the solution becomes a problem in itself. So I often times end up resolved to research on my own. In this case, I share the simplest programming method for displaying a &lt;a href=&#34;http://flickr.com&#34; title=&#34;Flickr&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Flickr&lt;/a&gt;&#xA; gallery, with PHP.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

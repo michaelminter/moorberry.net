@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>todos on Moorberry.net</title>
+    <link>https://moorberry.net/tags/todos/</link>
+    <description>Recent content in todos on Moorberry.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 06 Nov 2012 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://moorberry.net/tags/todos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Special Notes Lookup in Rails</title>
+      <link>https://moorberry.net/blog/notes/</link>
+      <pubDate>Tue, 06 Nov 2012 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/notes/</guid>
+      <description>&lt;p&gt;Add special notes to your source code comments in Rails to later remind you of tasks you need to complete:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

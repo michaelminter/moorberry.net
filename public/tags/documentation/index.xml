@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>documentation on Moorberry.net</title>
+    <link>https://moorberry.net/tags/documentation/</link>
+    <description>Recent content in documentation on Moorberry.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 15 Aug 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://moorberry.net/tags/documentation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rails 2 and acts_as_paranoid</title>
+      <link>https://moorberry.net/blog/rails-2-acts-as-paranoid/</link>
+      <pubDate>Thu, 15 Aug 2013 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/rails-2-acts-as-paranoid/</guid>
+      <description>Overrides some basic Active Record methods for the current model so that calling #destroy sets a deleted_at field to the current timestamp.&#xA;Setup Create migration file&#xA;acts_as_paranoid, by default, assumes the table has a deleted_at date/time field. Most normal model operations will work, but there will be some oddities.&#xA;$ script/server generate migration deleted_at:datetime And then modify your migration file (app/db/migrations/000000000000_add_deleted_at…rb)to look something like:&#xA;class AddDeletedAtToWidgets &amp;lt; ActiveRecord::Migration def self.up add_column :widgets, :deleted_at, :datetime, :null =&amp;gt; true end def self.</description>
+    </item>
+  </channel>
+</rss>

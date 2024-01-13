@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>lock wait on Moorberry.net</title>
+    <link>https://moorberry.net/tags/lock-wait/</link>
+    <description>Recent content in lock wait on Moorberry.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 17 Jun 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://moorberry.net/tags/lock-wait/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MySQL Lock Wait Timeout Exceeded</title>
+      <link>https://moorberry.net/blog/mysql-lock-wait-timeout-exceeded/</link>
+      <pubDate>Tue, 17 Jun 2014 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/mysql-lock-wait-timeout-exceeded/</guid>
+      <description>What to do when you encounter:&#xA;ActiveRecord::StatementInvalid: Mysql2::Error: Lock wait timeout exceeded;&#xA;One solution I&amp;rsquo;ve used, if you have an uber query or series of queries, is to extend the wait timeout.&#xA;If you can&amp;rsquo;t currently restart the server or MySQL, enter the following in the MySQL terminal:&#xA;mysql&amp;gt; set GLOBAL wait_timeout=28800; This setting will go away when the current MySQL instance is terminated.&#xA;To set the wait_timeout parameter permanently, edit your MySQL configuration file:</description>
+    </item>
+  </channel>
+</rss>

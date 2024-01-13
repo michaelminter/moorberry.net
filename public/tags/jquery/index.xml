@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jQuery on Moorberry.net</title>
+    <link>https://moorberry.net/tags/jquery/</link>
+    <description>Recent content in jQuery on Moorberry.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 11 Feb 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://moorberry.net/tags/jquery/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DataTables Pagination with Twitter Bootstrap</title>
+      <link>https://moorberry.net/blog/datatables-twitter-bootstrap-pagination/</link>
+      <pubDate>Mon, 11 Feb 2013 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/datatables-twitter-bootstrap-pagination/</guid>
+      <description>&lt;p&gt;As a developer who likes to spend more time with beautiful object-oriented code rather than mark-up, &lt;a href=&#34;http://datatables.net&#34; target=&#34;_blank&#34;&gt;DataTables&lt;/a&gt; is a wonderful tool for me, with a growing list of extendable features.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Clicked Link Attributes in jQuery Mobile Events</title>
+      <link>https://moorberry.net/blog/link-attributes-jquery-mobile/</link>
+      <pubDate>Wed, 06 Feb 2013 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/link-attributes-jquery-mobile/</guid>
+      <description>&lt;p&gt;So&amp;hellip;are you tired of writing and rewriting (or commenting out) Javascript and want to handle your clicked link attributes inside of a &lt;a href=&#34;http://jquerymobile.com/&#34; target=&#34;_blank&#34;&gt;jQuery Mobile&lt;/a&gt; event? Here&amp;rsquo;s how:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

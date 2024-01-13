@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ORM on Moorberry.net</title>
+    <link>https://moorberry.net/tags/orm/</link>
+    <description>Recent content in ORM on Moorberry.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 23 Feb 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://moorberry.net/tags/orm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>localStorage: Object Relational Mapping</title>
+      <link>https://moorberry.net/blog/localstorage-object-relational-mapping/</link>
+      <pubDate>Sat, 23 Feb 2013 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/localstorage-object-relational-mapping/</guid>
+      <description>&lt;p&gt;An Active Record -like localStorage Object-Relational Mapping library.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

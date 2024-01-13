@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on Moorberry.net</title>
+    <link>https://moorberry.net/tags/git/</link>
+    <description>Recent content in Git on Moorberry.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 08 May 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://moorberry.net/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Push to Github and Heroku</title>
+      <link>https://moorberry.net/blog/git-push-github-heroku/</link>
+      <pubDate>Thu, 08 May 2014 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/git-push-github-heroku/</guid>
+      <description>Group assign any git repository, on any git provider, and for as many remotes as you wish.&#xA;From your terminal, cd into where your repository is located and run:&#xA;$&amp;gt; git remote -v Should look something like:&#xA;heroku git@heroku.com:activezoo.git (fetch) heroku git@heroku.com:activezoo.git (push) openshift ssh://5340404b5973ca1ff800034d@ruby-activezoo.rhcloud.com/~/git/ruby.git (push) openshift ssh://5340404b5973ca1ff800034d@ruby-activezoo.rhcloud.com/~/git/ruby.git (fetch) origin git@github.com:michaelminter/active_zoo.git (push) origin git@github.com:michaelminter/active_zoo.git (fetch) Find the Github repo. Usually set up under the origin label.&#xA;To create the group remote, add the following command, with your Github repo address switched out with the one listed.</description>
+    </item>
+  </channel>
+</rss>

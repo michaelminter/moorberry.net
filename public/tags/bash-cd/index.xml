@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bash cd on Moorberry.net</title>
+    <link>https://moorberry.net/tags/bash-cd/</link>
+    <description>Recent content in Bash cd on Moorberry.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 30 Jul 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://moorberry.net/tags/bash-cd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Search Multiple Directories with cd</title>
+      <link>https://moorberry.net/blog/search-multiple-directories-with-cd/</link>
+      <pubDate>Wed, 30 Jul 2014 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/search-multiple-directories-with-cd/</guid>
+      <description>If you use the command line and frequent a particular directory you can set cd to scan, not just current, but other directories as well.&#xA;Modify ~/.bash_profile by appending directories to the CDPATH environment variable.&#xA;# define base directory for cd command export CDPATH=$CDPATH:$HOME/Repos Restart your terminal session and now you can cd projectDir. cd will reference any subdirectories in the current directory—as well as $HOME/Repos.&#xA;Autotabbing Custom Base Directories You can install an additonal library; bash-completion to use the [tab] key to autocomplete from the cd command.</description>
+    </item>
+  </channel>
+</rss>

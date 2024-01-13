@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>database on Moorberry.net</title>
+    <link>https://moorberry.net/tags/database/</link>
+    <description>Recent content in database on Moorberry.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 13 Apr 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://moorberry.net/tags/database/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Database Version Control with MySQL Utilities</title>
+      <link>https://moorberry.net/blog/database-version-control/</link>
+      <pubDate>Sun, 13 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/database-version-control/</guid>
+      <description>The following steps are meant to capture a snapshot of your development database structure and your staging/production database structure, compare the two, and provide SQL to consolidate the differences.&#xA;This article relates to one of many methods for database version control in a singular or team-based environment.&#xA;MySQL Workbench Having MySQL Workbench is not mandatory for this process. But it&amp;rsquo;s a nice interface to consolidate the suite of tools that MySQL offers.</description>
+    </item>
+  </channel>
+</rss>

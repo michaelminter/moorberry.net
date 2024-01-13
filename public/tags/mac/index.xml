@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mac on Moorberry.net</title>
+    <link>https://moorberry.net/tags/mac/</link>
+    <description>Recent content in Mac on Moorberry.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 13 May 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://moorberry.net/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create Linux Install USB on Mac</title>
+      <link>https://moorberry.net/blog/create-linux-install-usb/</link>
+      <pubDate>Tue, 13 May 2014 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/create-linux-install-usb/</guid>
+      <description>Create a bootable USB drive, for installing Linux, on your Mac.&#xA;Picking a Linux distro is like picking your favorite flavor of ice cream.&#xA;Find an awesome Linux distribution here distrowatch.com Prepare Convert the .iso file to .img using the convert option of hdiutil&#xA;hdiutil convert -format UDRW -o ~/path/to/target.img ~/path/to/ubuntu.iso Note: OS X tends to put the .dmg ending on the output file automatically.&#xA;Remove the USB drive from your machine if it&amp;rsquo;s currently inserted.</description>
+    </item>
+    <item>
+      <title>Activate Java Console in Mac</title>
+      <link>https://moorberry.net/blog/java-console-mac/</link>
+      <pubDate>Mon, 10 Sep 2012 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/java-console-mac/</guid>
+      <description>&lt;p&gt;When you need to debug a Java applet running on your website, there&amp;rsquo;s only one way, and that&amp;rsquo;s with Mac&amp;rsquo;s built-in Java console.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

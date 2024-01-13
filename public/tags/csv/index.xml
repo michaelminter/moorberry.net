@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CSV on Moorberry.net</title>
+    <link>https://moorberry.net/tags/csv/</link>
+    <description>Recent content in CSV on Moorberry.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 08 Oct 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://moorberry.net/tags/csv/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSV Special Character</title>
+      <link>https://moorberry.net/blog/csv-special-character/</link>
+      <pubDate>Tue, 08 Oct 2013 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/csv-special-character/</guid>
+      <description>Separate CSV data with a special character (example: thorn þ).&#xA;Google DFP (Double-click for Publishers) uses a special character in their CSV exports. Specifically the thorn character and it&amp;rsquo;s a pain. But Ruby can make it better.&#xA;You can skip to the bottom of this article for the neccessary code or read on from here for more details about figuring out the path to certainty.&#xA;Unicode Find the unicode character. For my example the thorn character þ is represented as u00FE.</description>
+    </item>
+    <item>
+      <title>Export Data as CSV</title>
+      <link>https://moorberry.net/blog/export-csv/</link>
+      <pubDate>Mon, 14 Nov 2011 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/export-csv/</guid>
+      <description>&lt;p&gt;In my research I found a hundred and more different ways to manage the task of exporting data into a CSV file. Whenever I’m learning something new, on a new system or with a new language, I like to build the process myself from scratch. And being a minimalist programmer it just seems fitting. Enjoy&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

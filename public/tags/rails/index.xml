@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rails on Moorberry.net</title>
+    <link>https://moorberry.net/tags/rails/</link>
+    <description>Recent content in Rails on Moorberry.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 15 Aug 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://moorberry.net/tags/rails/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rails 2 and acts_as_paranoid</title>
+      <link>https://moorberry.net/blog/rails-2-acts-as-paranoid/</link>
+      <pubDate>Thu, 15 Aug 2013 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/rails-2-acts-as-paranoid/</guid>
+      <description>Overrides some basic Active Record methods for the current model so that calling #destroy sets a deleted_at field to the current timestamp.&#xA;Setup Create migration file&#xA;acts_as_paranoid, by default, assumes the table has a deleted_at date/time field. Most normal model operations will work, but there will be some oddities.&#xA;$ script/server generate migration deleted_at:datetime And then modify your migration file (app/db/migrations/000000000000_add_deleted_at…rb)to look something like:&#xA;class AddDeletedAtToWidgets &amp;lt; ActiveRecord::Migration def self.up add_column :widgets, :deleted_at, :datetime, :null =&amp;gt; true end def self.</description>
+    </item>
+    <item>
+      <title>Airbrake: Send Error Notices using Javascript</title>
+      <link>https://moorberry.net/blog/airbrake-error-notice-javascript/</link>
+      <pubDate>Tue, 19 Feb 2013 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/airbrake-error-notice-javascript/</guid>
+      <description>&lt;p&gt;Right now you may be saying to yourself, &amp;ldquo;but why not just use an AJAX request inside of my Javascript application or use the Image().src hack&amp;hellip;&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Special Notes Lookup in Rails</title>
+      <link>https://moorberry.net/blog/notes/</link>
+      <pubDate>Tue, 06 Nov 2012 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/notes/</guid>
+      <description>&lt;p&gt;Add special notes to your source code comments in Rails to later remind you of tasks you need to complete:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Export Data as CSV</title>
+      <link>https://moorberry.net/blog/export-csv/</link>
+      <pubDate>Mon, 14 Nov 2011 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/export-csv/</guid>
+      <description>&lt;p&gt;In my research I found a hundred and more different ways to manage the task of exporting data into a CSV file. Whenever I’m learning something new, on a new system or with a new language, I like to build the process myself from scratch. And being a minimalist programmer it just seems fitting. Enjoy&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

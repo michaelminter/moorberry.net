@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nvp on Moorberry.net</title>
+    <link>https://moorberry.net/tags/nvp/</link>
+    <description>Recent content in nvp on Moorberry.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 03 Apr 2010 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://moorberry.net/tags/nvp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Paypal Express Checkout NVP API</title>
+      <link>https://moorberry.net/blog/paypal-express-checkout-nvp-api/</link>
+      <pubDate>Sat, 03 Apr 2010 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/paypal-express-checkout-nvp-api/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m not sure why &lt;a href=&#34;http://paypal.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paypal&lt;/a&gt;&#xA; has written documentation, regarding its own Express Checkout name-value-pair API, with no enthusiasm at all. The classes used with the Paypal API are extremely easy to use. All of this is likely contributing to the confusion about using Express Checkout. But I’m here now, to save your application, and hopefully your sanity.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

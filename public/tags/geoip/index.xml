@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>geoip on Moorberry.net</title>
+    <link>https://moorberry.net/tags/geoip/</link>
+    <description>Recent content in geoip on Moorberry.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 11 Dec 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://moorberry.net/tags/geoip/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Postgres: Search and Sort by Radial Distance</title>
+      <link>https://moorberry.net/blog/postgres-search-distance/</link>
+      <pubDate>Wed, 11 Dec 2013 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/postgres-search-distance/</guid>
+      <description>Request users by radial distance and sort by nearest to farthest, vice versa, or whatever other attributes you&amp;rsquo;d like to include.&#xA;Searching for a user by distance, in your database, is easy with Postgres. Just create a users table with, at minimum, columns named latitude and longitude.&#xA;Data postgres=# SELECT * FROM users; +----+------+----------+-----------+ | id | name | latitude | longitude | +----+------+----------+-----------+ SQL SELECT name, distance FROM ( SELECT name, ((ACOS(SIN(#{latitude} * PI() / 180) * SIN(u.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mobile on Moorberry.net</title>
+    <link>https://moorberry.net/tags/mobile/</link>
+    <description>Recent content in Mobile on Moorberry.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 06 Feb 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://moorberry.net/tags/mobile/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Clicked Link Attributes in jQuery Mobile Events</title>
+      <link>https://moorberry.net/blog/link-attributes-jquery-mobile/</link>
+      <pubDate>Wed, 06 Feb 2013 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/link-attributes-jquery-mobile/</guid>
+      <description>&lt;p&gt;So&amp;hellip;are you tired of writing and rewriting (or commenting out) Javascript and want to handle your clicked link attributes inside of a &lt;a href=&#34;http://jquerymobile.com/&#34; target=&#34;_blank&#34;&gt;jQuery Mobile&lt;/a&gt; event? Here&amp;rsquo;s how:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

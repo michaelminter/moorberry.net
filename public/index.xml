@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Moorberry.net</title>
+    <link>https://moorberry.net/</link>
+    <description>Recent content on Moorberry.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 30 Jul 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://moorberry.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Me</title>
+      <link>https://moorberry.net/about/</link>
+      <pubDate>Thu, 15 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/about/</guid>
+      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.&#xA;Hugo makes use of a variety of open source projects including:&#xA;https://github.com/yuin/goldmark https://github.</description>
+    </item>
+    <item>
+      <title>Search Multiple Directories with cd</title>
+      <link>https://moorberry.net/blog/search-multiple-directories-with-cd/</link>
+      <pubDate>Wed, 30 Jul 2014 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/search-multiple-directories-with-cd/</guid>
+      <description>If you use the command line and frequent a particular directory you can set cd to scan, not just current, but other directories as well.&#xA;Modify ~/.bash_profile by appending directories to the CDPATH environment variable.&#xA;# define base directory for cd command export CDPATH=$CDPATH:$HOME/Repos Restart your terminal session and now you can cd projectDir. cd will reference any subdirectories in the current directory—as well as $HOME/Repos.&#xA;Autotabbing Custom Base Directories You can install an additonal library; bash-completion to use the [tab] key to autocomplete from the cd command.</description>
+    </item>
+    <item>
+      <title>MySQL Lock Wait Timeout Exceeded</title>
+      <link>https://moorberry.net/blog/mysql-lock-wait-timeout-exceeded/</link>
+      <pubDate>Tue, 17 Jun 2014 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/mysql-lock-wait-timeout-exceeded/</guid>
+      <description>What to do when you encounter:&#xA;ActiveRecord::StatementInvalid: Mysql2::Error: Lock wait timeout exceeded;&#xA;One solution I&amp;rsquo;ve used, if you have an uber query or series of queries, is to extend the wait timeout.&#xA;If you can&amp;rsquo;t currently restart the server or MySQL, enter the following in the MySQL terminal:&#xA;mysql&amp;gt; set GLOBAL wait_timeout=28800; This setting will go away when the current MySQL instance is terminated.&#xA;To set the wait_timeout parameter permanently, edit your MySQL configuration file:</description>
+    </item>
+    <item>
+      <title>Create Linux Install USB on Mac</title>
+      <link>https://moorberry.net/blog/create-linux-install-usb/</link>
+      <pubDate>Tue, 13 May 2014 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/create-linux-install-usb/</guid>
+      <description>Create a bootable USB drive, for installing Linux, on your Mac.&#xA;Picking a Linux distro is like picking your favorite flavor of ice cream.&#xA;Find an awesome Linux distribution here distrowatch.com Prepare Convert the .iso file to .img using the convert option of hdiutil&#xA;hdiutil convert -format UDRW -o ~/path/to/target.img ~/path/to/ubuntu.iso Note: OS X tends to put the .dmg ending on the output file automatically.&#xA;Remove the USB drive from your machine if it&amp;rsquo;s currently inserted.</description>
+    </item>
+    <item>
+      <title>Git Push to Github and Heroku</title>
+      <link>https://moorberry.net/blog/git-push-github-heroku/</link>
+      <pubDate>Thu, 08 May 2014 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/git-push-github-heroku/</guid>
+      <description>Group assign any git repository, on any git provider, and for as many remotes as you wish.&#xA;From your terminal, cd into where your repository is located and run:&#xA;$&amp;gt; git remote -v Should look something like:&#xA;heroku git@heroku.com:activezoo.git (fetch) heroku git@heroku.com:activezoo.git (push) openshift ssh://5340404b5973ca1ff800034d@ruby-activezoo.rhcloud.com/~/git/ruby.git (push) openshift ssh://5340404b5973ca1ff800034d@ruby-activezoo.rhcloud.com/~/git/ruby.git (fetch) origin git@github.com:michaelminter/active_zoo.git (push) origin git@github.com:michaelminter/active_zoo.git (fetch) Find the Github repo. Usually set up under the origin label.&#xA;To create the group remote, add the following command, with your Github repo address switched out with the one listed.</description>
+    </item>
+    <item>
+      <title>Database Version Control with MySQL Utilities</title>
+      <link>https://moorberry.net/blog/database-version-control/</link>
+      <pubDate>Sun, 13 Apr 2014 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/database-version-control/</guid>
+      <description>The following steps are meant to capture a snapshot of your development database structure and your staging/production database structure, compare the two, and provide SQL to consolidate the differences.&#xA;This article relates to one of many methods for database version control in a singular or team-based environment.&#xA;MySQL Workbench Having MySQL Workbench is not mandatory for this process. But it&amp;rsquo;s a nice interface to consolidate the suite of tools that MySQL offers.</description>
+    </item>
+    <item>
+      <title>Multi Column Unique Indexes</title>
+      <link>https://moorberry.net/blog/multi-column-unique-indexes/</link>
+      <pubDate>Wed, 15 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/multi-column-unique-indexes/</guid>
+      <description>When a database key is created from a combination of two or more columns, the key is called a composite key. Each column may not be unique by itself within the database table but when combined with the other column(s) in the composite key, the combination is unique.&#xA;The following data is taken from the Google DFP Report API example source code.&#xA;CREATE TABLE `src_dfp` ( `id` int(11) unsigned NOT NULL AUTO_INCREMENT, `ad_unit_1` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL, `ad_unit_2` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL, `ad_unit_id_1` int(11) DEFAULT NULL, `ad_unit_id_2` int(11) DEFAULT NULL, `advertiser_id` int(11) DEFAULT NULL, `advertiser_name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL, `creative_id` bigint(11) DEFAULT NULL, `creative_name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL, `date` date DEFAULT NULL, `line_item_cost_per_unit` int(11) DEFAULT NULL, `line_item_cost_type` varchar(11) COLLATE utf8_unicode_ci DEFAULT NULL, `line_item_end_date_time` datetime DEFAULT NULL, `line_item_id` int(11) DEFAULT NULL, `line_item_name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL, `line_item_start_date_time` datetime DEFAULT NULL, `line_item_type` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL, `merged_ad_server_clicks` int(11) DEFAULT NULL, `merged_ad_server_impressions` int(11) DEFAULT NULL, `order_end_date_time` datetime DEFAULT NULL, `order_id` int(11) DEFAULT NULL, `order_name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL, `order_start_date_time` datetime DEFAULT NULL, `created_at` datetime DEFAULT NOW(), `updated_at` datetime DEFAULT NULL, PRIMARY KEY (`id`), UNIQUE KEY `composite_dfp` (`date`,`ad_unit_id_1`,`ad_unit_id_2`,`advertiser_id`,`creative_id`,`line_item_id`,`order_id`) ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci; Or to modify an existing table:</description>
+    </item>
+    <item>
+      <title>Postgres: Search and Sort by Radial Distance</title>
+      <link>https://moorberry.net/blog/postgres-search-distance/</link>
+      <pubDate>Wed, 11 Dec 2013 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/postgres-search-distance/</guid>
+      <description>Request users by radial distance and sort by nearest to farthest, vice versa, or whatever other attributes you&amp;rsquo;d like to include.&#xA;Searching for a user by distance, in your database, is easy with Postgres. Just create a users table with, at minimum, columns named latitude and longitude.&#xA;Data postgres=# SELECT * FROM users; +----+------+----------+-----------+ | id | name | latitude | longitude | +----+------+----------+-----------+ SQL SELECT name, distance FROM ( SELECT name, ((ACOS(SIN(#{latitude} * PI() / 180) * SIN(u.</description>
+    </item>
+    <item>
+      <title>CSV Special Character</title>
+      <link>https://moorberry.net/blog/csv-special-character/</link>
+      <pubDate>Tue, 08 Oct 2013 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/csv-special-character/</guid>
+      <description>Separate CSV data with a special character (example: thorn þ).&#xA;Google DFP (Double-click for Publishers) uses a special character in their CSV exports. Specifically the thorn character and it&amp;rsquo;s a pain. But Ruby can make it better.&#xA;You can skip to the bottom of this article for the neccessary code or read on from here for more details about figuring out the path to certainty.&#xA;Unicode Find the unicode character. For my example the thorn character þ is represented as u00FE.</description>
+    </item>
+    <item>
+      <title>Rails 2 and acts_as_paranoid</title>
+      <link>https://moorberry.net/blog/rails-2-acts-as-paranoid/</link>
+      <pubDate>Thu, 15 Aug 2013 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/rails-2-acts-as-paranoid/</guid>
+      <description>Overrides some basic Active Record methods for the current model so that calling #destroy sets a deleted_at field to the current timestamp.&#xA;Setup Create migration file&#xA;acts_as_paranoid, by default, assumes the table has a deleted_at date/time field. Most normal model operations will work, but there will be some oddities.&#xA;$ script/server generate migration deleted_at:datetime And then modify your migration file (app/db/migrations/000000000000_add_deleted_at…rb)to look something like:&#xA;class AddDeletedAtToWidgets &amp;lt; ActiveRecord::Migration def self.up add_column :widgets, :deleted_at, :datetime, :null =&amp;gt; true end def self.</description>
+    </item>
+    <item>
+      <title>Android Javascript Debugging</title>
+      <link>https://moorberry.net/blog/android-javascript-debugging/</link>
+      <pubDate>Mon, 12 Aug 2013 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/android-javascript-debugging/</guid>
+      <description>As a web developer, I have to use console.log a lot to see what&amp;rsquo;s going on with Javascript in my web applications, and Android Browser does not make this an easy task.&#xA;Initial searches brought up articles suggesting use of the Android SDK, plugging my phone into my computer, setting up the debug bridge, et cetera. That&amp;rsquo;s a lot of work.&#xA;There is a way to do Javascript debugging entirely on your phone without the Android SDK.</description>
+    </item>
+    <item>
+      <title>OpenOffice: Merge and Sort Data</title>
+      <link>https://moorberry.net/blog/openoffice-merge-and-sort-data/</link>
+      <pubDate>Tue, 14 May 2013 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/openoffice-merge-and-sort-data/</guid>
+      <description>&lt;p&gt;You need to &lt;strong&gt;construct an array using a list of pre-existing values&lt;/strong&gt; but firstly have to &lt;strong&gt;sort the order&lt;/strong&gt; of that list.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Book Review: Eloquent Ruby</title>
+      <link>https://moorberry.net/blog/eloquent-ruby-book-review/</link>
+      <pubDate>Sat, 06 Apr 2013 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/eloquent-ruby-book-review/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.amazon.com/gp/product/0321584104/ref=as_li_ss_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0321584104&amp;linkCode=as2&amp;tag=moorberry-20&#34; target=&#34;_blank&#34;&gt;Eloquent Ruby&lt;/a&gt;&lt;img src=&#34;http://www.assoc-amazon.com/e/ir?t=moorberry-20&amp;l=as2&amp;o=1&amp;a=0321584104&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important;display:inline;margin:0px !important;&#34; /&gt;&#xA;is a book about the Ruby programming language that focuses on &lt;strong&gt;Ruby programming style&lt;/strong&gt; by teaching you how to write your code as a real world hardened Rubyist.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Send Text Message Through Email</title>
+      <link>https://moorberry.net/blog/send-text-message-through-email/</link>
+      <pubDate>Wed, 27 Mar 2013 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/send-text-message-through-email/</guid>
+      <description>&lt;p&gt;If you&amp;rsquo;d like to send a TXT message through email rather than use a SaaS application, such as &lt;a href=&#34;http://twilio.com&#34; target=&#34;_blank&#34; alt=&#34;Twilio&#34; title=&#34;Twilio&#34;&gt;Twilio&lt;/a&gt;, you can send SMS messages through SMTP.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>localStorage: Object Relational Mapping</title>
+      <link>https://moorberry.net/blog/localstorage-object-relational-mapping/</link>
+      <pubDate>Sat, 23 Feb 2013 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/localstorage-object-relational-mapping/</guid>
+      <description>&lt;p&gt;An Active Record -like localStorage Object-Relational Mapping library.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Airbrake: Send Error Notices using Javascript</title>
+      <link>https://moorberry.net/blog/airbrake-error-notice-javascript/</link>
+      <pubDate>Tue, 19 Feb 2013 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/airbrake-error-notice-javascript/</guid>
+      <description>&lt;p&gt;Right now you may be saying to yourself, &amp;ldquo;but why not just use an AJAX request inside of my Javascript application or use the Image().src hack&amp;hellip;&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>DataTables Pagination with Twitter Bootstrap</title>
+      <link>https://moorberry.net/blog/datatables-twitter-bootstrap-pagination/</link>
+      <pubDate>Mon, 11 Feb 2013 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/datatables-twitter-bootstrap-pagination/</guid>
+      <description>&lt;p&gt;As a developer who likes to spend more time with beautiful object-oriented code rather than mark-up, &lt;a href=&#34;http://datatables.net&#34; target=&#34;_blank&#34;&gt;DataTables&lt;/a&gt; is a wonderful tool for me, with a growing list of extendable features.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Clicked Link Attributes in jQuery Mobile Events</title>
+      <link>https://moorberry.net/blog/link-attributes-jquery-mobile/</link>
+      <pubDate>Wed, 06 Feb 2013 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/link-attributes-jquery-mobile/</guid>
+      <description>&lt;p&gt;So&amp;hellip;are you tired of writing and rewriting (or commenting out) Javascript and want to handle your clicked link attributes inside of a &lt;a href=&#34;http://jquerymobile.com/&#34; target=&#34;_blank&#34;&gt;jQuery Mobile&lt;/a&gt; event? Here&amp;rsquo;s how:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Special Notes Lookup in Rails</title>
+      <link>https://moorberry.net/blog/notes/</link>
+      <pubDate>Tue, 06 Nov 2012 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/notes/</guid>
+      <description>&lt;p&gt;Add special notes to your source code comments in Rails to later remind you of tasks you need to complete:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Keeping Your Heroku Dyno Awake</title>
+      <link>https://moorberry.net/blog/heroku-dyno-ping/</link>
+      <pubDate>Thu, 20 Sep 2012 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/heroku-dyno-ping/</guid>
+      <description>&lt;p&gt;Apps that have scaled the number of web dynos (dynos running the web process type) so that only a single web dyno is running, will have that web dyno idled out after one hour of inactivity. When this happens, you’ll see the following in your logs:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Activate Java Console in Mac</title>
+      <link>https://moorberry.net/blog/java-console-mac/</link>
+      <pubDate>Mon, 10 Sep 2012 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/java-console-mac/</guid>
+      <description>&lt;p&gt;When you need to debug a Java applet running on your website, there&amp;rsquo;s only one way, and that&amp;rsquo;s with Mac&amp;rsquo;s built-in Java console.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HTML Not Rendering in Gmail</title>
+      <link>https://moorberry.net/blog/html-not-rendering-in-gmail/</link>
+      <pubDate>Sat, 10 Dec 2011 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/html-not-rendering-in-gmail/</guid>
+      <description>&lt;p&gt;I’ve been handling many of my company’s email campaigns for some time now and I can honestly say that it’s been pretty fun from a technical stand-point. There’s a lot that goes into email marketing (not including the marketing/sales implications). It has it’s own conventions, ideologies, and I believe to the utmost that there’s a larger future than presumed in store for the sometimes misunderstood technology. (I’m patiently waiting for a mobile device header-type.)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Export Data as CSV</title>
+      <link>https://moorberry.net/blog/export-csv/</link>
+      <pubDate>Mon, 14 Nov 2011 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/export-csv/</guid>
+      <description>&lt;p&gt;In my research I found a hundred and more different ways to manage the task of exporting data into a CSV file. Whenever I’m learning something new, on a new system or with a new language, I like to build the process myself from scratch. And being a minimalist programmer it just seems fitting. Enjoy&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dynamically Render Images with PHP</title>
+      <link>https://moorberry.net/blog/content-delivery-network/</link>
+      <pubDate>Thu, 22 Apr 2010 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/content-delivery-network/</guid>
+      <description>&lt;p&gt;If you’ve been frustrated with having to resize images for the sake of continuity or load time and don’t want to develop an entire caching system than this post will be of great value to you.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paypal Express Checkout NVP API</title>
+      <link>https://moorberry.net/blog/paypal-express-checkout-nvp-api/</link>
+      <pubDate>Sat, 03 Apr 2010 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/paypal-express-checkout-nvp-api/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m not sure why &lt;a href=&#34;http://paypal.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paypal&lt;/a&gt;&#xA; has written documentation, regarding its own Express Checkout name-value-pair API, with no enthusiasm at all. The classes used with the Paypal API are extremely easy to use. All of this is likely contributing to the confusion about using Express Checkout. But I’m here now, to save your application, and hopefully your sanity.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Server vs Client</title>
+      <link>https://moorberry.net/blog/server-vs-client/</link>
+      <pubDate>Thu, 25 Mar 2010 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/server-vs-client/</guid>
+      <description>&lt;p&gt;My presumption is that it’s because of the passionate advent of JQuery, that there has been an increasing rise of using Javascript, in precedence of a server side language like PHP or Ruby. This circumstance is arguably the sole cause to how and why, &lt;em&gt;mostly designers&lt;/em&gt;, are simply not learning a better way. I’m here to enlighten you.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PHP Flickr Gallery</title>
+      <link>https://moorberry.net/blog/php-flickr-gallery/</link>
+      <pubDate>Wed, 24 Mar 2010 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/php-flickr-gallery/</guid>
+      <description>&lt;p&gt;In my search for finding a simple solution to any problem, I usually cross many and many blogs and articles, discussing whatever topic. But with so much detail that the solution becomes a problem in itself. So I often times end up resolved to research on my own. In this case, I share the simplest programming method for displaying a &lt;a href=&#34;http://flickr.com&#34; title=&#34;Flickr&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Flickr&lt;/a&gt;&#xA; gallery, with PHP.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

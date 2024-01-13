@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java App on Moorberry.net</title>
+    <link>https://moorberry.net/tags/java-app/</link>
+    <description>Recent content in Java App on Moorberry.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 10 Sep 2012 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://moorberry.net/tags/java-app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Activate Java Console in Mac</title>
+      <link>https://moorberry.net/blog/java-console-mac/</link>
+      <pubDate>Mon, 10 Sep 2012 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/java-console-mac/</guid>
+      <description>&lt;p&gt;When you need to debug a Java applet running on your website, there&amp;rsquo;s only one way, and that&amp;rsquo;s with Mac&amp;rsquo;s built-in Java console.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

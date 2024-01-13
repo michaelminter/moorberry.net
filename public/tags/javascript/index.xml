@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Javascript on Moorberry.net</title>
+    <link>https://moorberry.net/tags/javascript/</link>
+    <description>Recent content in Javascript on Moorberry.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 12 Aug 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://moorberry.net/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Android Javascript Debugging</title>
+      <link>https://moorberry.net/blog/android-javascript-debugging/</link>
+      <pubDate>Mon, 12 Aug 2013 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/android-javascript-debugging/</guid>
+      <description>As a web developer, I have to use console.log a lot to see what&amp;rsquo;s going on with Javascript in my web applications, and Android Browser does not make this an easy task.&#xA;Initial searches brought up articles suggesting use of the Android SDK, plugging my phone into my computer, setting up the debug bridge, et cetera. That&amp;rsquo;s a lot of work.&#xA;There is a way to do Javascript debugging entirely on your phone without the Android SDK.</description>
+    </item>
+    <item>
+      <title>localStorage: Object Relational Mapping</title>
+      <link>https://moorberry.net/blog/localstorage-object-relational-mapping/</link>
+      <pubDate>Sat, 23 Feb 2013 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/localstorage-object-relational-mapping/</guid>
+      <description>&lt;p&gt;An Active Record -like localStorage Object-Relational Mapping library.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Airbrake: Send Error Notices using Javascript</title>
+      <link>https://moorberry.net/blog/airbrake-error-notice-javascript/</link>
+      <pubDate>Tue, 19 Feb 2013 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/airbrake-error-notice-javascript/</guid>
+      <description>&lt;p&gt;Right now you may be saying to yourself, &amp;ldquo;but why not just use an AJAX request inside of my Javascript application or use the Image().src hack&amp;hellip;&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Server vs Client</title>
+      <link>https://moorberry.net/blog/server-vs-client/</link>
+      <pubDate>Thu, 25 Mar 2010 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/server-vs-client/</guid>
+      <description>&lt;p&gt;My presumption is that it’s because of the passionate advent of JQuery, that there has been an increasing rise of using Javascript, in precedence of a server side language like PHP or Ruby. This circumstance is arguably the sole cause to how and why, &lt;em&gt;mostly designers&lt;/em&gt;, are simply not learning a better way. I’m here to enlighten you.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

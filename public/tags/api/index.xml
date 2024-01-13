@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>API on Moorberry.net</title>
+    <link>https://moorberry.net/tags/api/</link>
+    <description>Recent content in API on Moorberry.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 27 Mar 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://moorberry.net/tags/api/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Send Text Message Through Email</title>
+      <link>https://moorberry.net/blog/send-text-message-through-email/</link>
+      <pubDate>Wed, 27 Mar 2013 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/send-text-message-through-email/</guid>
+      <description>&lt;p&gt;If you&amp;rsquo;d like to send a TXT message through email rather than use a SaaS application, such as &lt;a href=&#34;http://twilio.com&#34; target=&#34;_blank&#34; alt=&#34;Twilio&#34; title=&#34;Twilio&#34;&gt;Twilio&lt;/a&gt;, you can send SMS messages through SMTP.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Keeping Your Heroku Dyno Awake</title>
+      <link>https://moorberry.net/blog/heroku-dyno-ping/</link>
+      <pubDate>Thu, 20 Sep 2012 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/heroku-dyno-ping/</guid>
+      <description>&lt;p&gt;Apps that have scaled the number of web dynos (dynos running the web process type) so that only a single web dyno is running, will have that web dyno idled out after one hour of inactivity. When this happens, you’ll see the following in your logs:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HTML Not Rendering in Gmail</title>
+      <link>https://moorberry.net/blog/html-not-rendering-in-gmail/</link>
+      <pubDate>Sat, 10 Dec 2011 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/html-not-rendering-in-gmail/</guid>
+      <description>&lt;p&gt;I’ve been handling many of my company’s email campaigns for some time now and I can honestly say that it’s been pretty fun from a technical stand-point. There’s a lot that goes into email marketing (not including the marketing/sales implications). It has it’s own conventions, ideologies, and I believe to the utmost that there’s a larger future than presumed in store for the sometimes misunderstood technology. (I’m patiently waiting for a mobile device header-type.)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paypal Express Checkout NVP API</title>
+      <link>https://moorberry.net/blog/paypal-express-checkout-nvp-api/</link>
+      <pubDate>Sat, 03 Apr 2010 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/paypal-express-checkout-nvp-api/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m not sure why &lt;a href=&#34;http://paypal.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paypal&lt;/a&gt;&#xA; has written documentation, regarding its own Express Checkout name-value-pair API, with no enthusiasm at all. The classes used with the Paypal API are extremely easy to use. All of this is likely contributing to the confusion about using Express Checkout. But I’m here now, to save your application, and hopefully your sanity.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PHP Flickr Gallery</title>
+      <link>https://moorberry.net/blog/php-flickr-gallery/</link>
+      <pubDate>Wed, 24 Mar 2010 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/php-flickr-gallery/</guid>
+      <description>&lt;p&gt;In my search for finding a simple solution to any problem, I usually cross many and many blogs and articles, discussing whatever topic. But with so much detail that the solution becomes a problem in itself. So I often times end up resolved to research on my own. In this case, I share the simplest programming method for displaying a &lt;a href=&#34;http://flickr.com&#34; title=&#34;Flickr&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Flickr&lt;/a&gt;&#xA; gallery, with PHP.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

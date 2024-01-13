@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HTML on Moorberry.net</title>
+    <link>https://moorberry.net/tags/html/</link>
+    <description>Recent content in HTML on Moorberry.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 10 Dec 2011 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://moorberry.net/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTML Not Rendering in Gmail</title>
+      <link>https://moorberry.net/blog/html-not-rendering-in-gmail/</link>
+      <pubDate>Sat, 10 Dec 2011 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/html-not-rendering-in-gmail/</guid>
+      <description>&lt;p&gt;I’ve been handling many of my company’s email campaigns for some time now and I can honestly say that it’s been pretty fun from a technical stand-point. There’s a lot that goes into email marketing (not including the marketing/sales implications). It has it’s own conventions, ideologies, and I believe to the utmost that there’s a larger future than presumed in store for the sometimes misunderstood technology. (I’m patiently waiting for a mobile device header-type.)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

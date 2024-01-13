@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Airbrake on Moorberry.net</title>
+    <link>https://moorberry.net/tags/airbrake/</link>
+    <description>Recent content in Airbrake on Moorberry.net</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 19 Feb 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://moorberry.net/tags/airbrake/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Airbrake: Send Error Notices using Javascript</title>
+      <link>https://moorberry.net/blog/airbrake-error-notice-javascript/</link>
+      <pubDate>Tue, 19 Feb 2013 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/airbrake-error-notice-javascript/</guid>
+      <description>&lt;p&gt;Right now you may be saying to yourself, &amp;ldquo;but why not just use an AJAX request inside of my Javascript application or use the Image().src hack&amp;hellip;&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
