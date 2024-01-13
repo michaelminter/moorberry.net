@@ -8,7 +8,7 @@ DefaultContentLanguageInSubdir = false
 
 [services]
   [services.googleAnalytics]
-    # ID = 'G-0CQGBT41S6'
+    ID = 'G-0CQGBT41S6'
 
 [languages]
   [languages.en]
