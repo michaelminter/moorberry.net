@@ -1,4 +1,4 @@
-baseURL = 'https://moorberry.net/'
+baseURL = 'https://moorberry.net'
 languageCode = 'en-us'
 title = 'Moorberry'
 theme = 'blist'
