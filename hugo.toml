@@ -1,6 +1,6 @@
 baseURL = 'https://moorberry.net/'
 languageCode = 'en-us'
-title = 'Moorberry.net'
+title = 'Moorberry'
 theme = 'blist'
 
 DefaultContentLanguage = "en"
