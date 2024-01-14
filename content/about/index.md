@@ -1,7 +1,7 @@
 ---
-author: Katheryn Fox
+author: Michael Minter
 title: About Me
-date: 2021-07-15
+date: 2024-01-13
 description:
 keywords: ["about-us", "about-hugo", "contact"]
 type: about

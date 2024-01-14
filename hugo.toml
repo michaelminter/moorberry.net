@@ -63,6 +63,7 @@ DefaultContentLanguageInSubdir = false
 
   # Custom copyright - optional
   copyright = "Copyright © 2024 - Michael Minter · All rights reserved"
+
   favicon = "/favicon.svg"
 
   # Color for the intro details and social links block, not applicable for dark mode
