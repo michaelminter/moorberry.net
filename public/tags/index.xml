@@ -6,13 +6,104 @@
     <description>Recent content in Tags on Moorberry</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 30 Jul 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jan 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://moorberry.net/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Bash cd</title>
-      <link>https://moorberry.net/tags/bash-cd/</link>
+      <title>AWS</title>
+      <link>https://moorberry.net/tags/aws/</link>
+      <pubDate>Sun, 14 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/tags/aws/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DevOps</title>
+      <link>https://moorberry.net/tags/devops/</link>
+      <pubDate>Sun, 14 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/tags/devops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DNS</title>
+      <link>https://moorberry.net/tags/dns/</link>
+      <pubDate>Sun, 14 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/tags/dns/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Domain</title>
+      <link>https://moorberry.net/tags/domain/</link>
+      <pubDate>Sun, 14 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/tags/domain/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hosted zone</title>
+      <link>https://moorberry.net/tags/hosted-zone/</link>
+      <pubDate>Sun, 14 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/tags/hosted-zone/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Name Servers</title>
+      <link>https://moorberry.net/tags/name-servers/</link>
+      <pubDate>Sun, 14 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/tags/name-servers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>NS</title>
+      <link>https://moorberry.net/tags/ns/</link>
+      <pubDate>Sun, 14 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/tags/ns/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Route 53</title>
+      <link>https://moorberry.net/tags/route-53/</link>
+      <pubDate>Sun, 14 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/tags/route-53/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bash</title>
+      <link>https://moorberry.net/tags/bash/</link>
       <pubDate>Wed, 30 Jul 2014 00:00:00 +0000</pubDate>
-      <guid>https://moorberry.net/tags/bash-cd/</guid>
+      <guid>https://moorberry.net/tags/bash/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>cd</title>
+      <link>https://moorberry.net/tags/cd/</link>
+      <pubDate>Wed, 30 Jul 2014 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/tags/cd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fedora</title>
+      <link>https://moorberry.net/tags/fedora/</link>
+      <pubDate>Wed, 30 Jul 2014 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/tags/fedora/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>https://moorberry.net/tags/linux/</link>
+      <pubDate>Wed, 30 Jul 2014 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ubuntu</title>
+      <link>https://moorberry.net/tags/ubuntu/</link>
+      <pubDate>Wed, 30 Jul 2014 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/tags/ubuntu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Unix</title>
+      <link>https://moorberry.net/tags/unix/</link>
+      <pubDate>Wed, 30 Jul 2014 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/tags/unix/</guid>
       <description></description>
     </item>
     <item>
@@ -55,13 +146,6 @@
       <link>https://moorberry.net/tags/installation/</link>
       <pubDate>Tue, 13 May 2014 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/installation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Linux</title>
-      <link>https://moorberry.net/tags/linux/</link>
-      <pubDate>Tue, 13 May 2014 00:00:00 +0000</pubDate>
-      <guid>https://moorberry.net/tags/linux/</guid>
       <description></description>
     </item>
     <item>

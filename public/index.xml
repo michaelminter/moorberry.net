@@ -6,14 +6,28 @@
     <description>Recent content on Moorberry</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 30 Jul 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jan 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://moorberry.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reset AWS Route 53 NS Records</title>
+      <link>https://moorberry.net/blog/reset-aws-route53-name-servers/</link>
+      <pubDate>Sun, 14 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/reset-aws-route53-name-servers/</guid>
+      <description>Managing your domain&amp;rsquo;s DNS settings is a crucial aspect of maintaining a robust online presence. AWS Route 53 provides a reliable and scalable domain name system (DNS) service. If you ever need to reset your domain name servers (DNS) in AWS Route 53, follow these step-by-step instructions.&#xA;Prerequisites Before you begin, ensure that you have the necessary permissions to modify DNS settings for your domain. Additionally, make sure you are logged in to the AWS Management Console.</description>
+    </item>
     <item>
       <title>About Me</title>
       <link>https://moorberry.net/about/</link>
       <pubDate>Sat, 13 Jan 2024 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/about/</guid>
       <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.&#xA;Hugo makes use of a variety of open source projects including:&#xA;https://github.com/yuin/goldmark https://github.</description>
+    </item>
+    <item>
+      <title>Resume</title>
+      <link>https://moorberry.net/resume/</link>
+      <pubDate>Sat, 13 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/resume/</guid>
+      <description>Michael Minter San Antonio, Texas, United States Email: mothore@gmail.com Phone: 5125797931 LinkedIn: linkedin.com/in/mminter Summary My passion for business and software architecture, and being able to serve the community, keeps me constantly exploring different technologies. I&amp;rsquo;m frequently forking and always looking for a weekend project to learn something new. I’m a self-taught software nerd and love teaching people who feel as excited as I do about learning.&#xA;Experience Senior Software Engineer Honeybee Health Dec 2020 - Present (3 years 2 months)</description>
     </item>
     <item>
       <title>Search Multiple Directories with cd</title>

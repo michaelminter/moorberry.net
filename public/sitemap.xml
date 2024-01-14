@@ -2,22 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://moorberry.net/tags/aws/</loc>
+    <lastmod>2024-01-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://moorberry.net/blog/</loc>
+    <lastmod>2024-01-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://moorberry.net/tags/devops/</loc>
+    <lastmod>2024-01-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://moorberry.net/tags/dns/</loc>
+    <lastmod>2024-01-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://moorberry.net/tags/domain/</loc>
+    <lastmod>2024-01-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://moorberry.net/tags/hosted-zone/</loc>
+    <lastmod>2024-01-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://moorberry.net/</loc>
+    <lastmod>2024-01-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://moorberry.net/tags/name-servers/</loc>
+    <lastmod>2024-01-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://moorberry.net/tags/ns/</loc>
+    <lastmod>2024-01-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://moorberry.net/blog/reset-aws-route53-name-servers/</loc>
+    <lastmod>2024-01-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://moorberry.net/tags/route-53/</loc>
+    <lastmod>2024-01-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://moorberry.net/tags/</loc>
+    <lastmod>2024-01-14T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://moorberry.net/about/</loc>
     <lastmod>2024-01-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://moorberry.net/tags/bash-cd/</loc>
+    <loc>https://moorberry.net/resume/</loc>
+    <lastmod>2024-01-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://moorberry.net/tags/bash/</loc>
     <lastmod>2014-07-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://moorberry.net/blog/</loc>
+    <loc>https://moorberry.net/tags/cd/</loc>
     <lastmod>2014-07-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://moorberry.net/</loc>
+    <loc>https://moorberry.net/tags/fedora/</loc>
+    <lastmod>2014-07-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://moorberry.net/tags/linux/</loc>
     <lastmod>2014-07-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://moorberry.net/blog/search-multiple-directories-with-cd/</loc>
     <lastmod>2014-07-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://moorberry.net/tags/</loc>
+    <loc>https://moorberry.net/tags/ubuntu/</loc>
+    <lastmod>2014-07-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://moorberry.net/tags/unix/</loc>
     <lastmod>2014-07-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://moorberry.net/tags/error/</loc>
@@ -42,9 +87,6 @@
     <lastmod>2014-05-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://moorberry.net/tags/installation/</loc>
-    <lastmod>2014-05-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://moorberry.net/tags/linux/</loc>
     <lastmod>2014-05-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://moorberry.net/tags/mac/</loc>

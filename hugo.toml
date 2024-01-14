@@ -19,7 +19,7 @@ DefaultContentLanguageInSubdir = false
       introTitle = "Hey! I'm Michael Minter"
       introSubtitle = "Lead developer who enjoys learning new technology, business systems, and modes for artistic freedom."
       introPhoto = "/michael.webp"
-      logo = "/blue-m-logo.png"
+      logo = "/logo.svg"
     [[languages.en.menu.main]]
         name = "Blog"
         url = "blog"
@@ -27,18 +27,13 @@ DefaultContentLanguageInSubdir = false
 
     [[languages.en.menu.main]]
         name = "About"
-        url = "/about/"
+        url = "about"
         weight = 2
-
-    [[languages.en.menu.main]]
-        name = "Tags"
-        url = "tags"
-        weight = 3
 
     [[languages.en.menu.main]]
         name = "Top Post"
         url = "/blog/content-delivery-network/"
-        weight = 4
+        weight = 3
 
 [params]
   # Enable the darkmode toggle in header

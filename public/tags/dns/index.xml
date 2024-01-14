@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DNS on Moorberry</title>
+    <link>https://moorberry.net/tags/dns/</link>
+    <description>Recent content in DNS on Moorberry</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 14 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://moorberry.net/tags/dns/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reset AWS Route 53 NS Records</title>
+      <link>https://moorberry.net/blog/reset-aws-route53-name-servers/</link>
+      <pubDate>Sun, 14 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://moorberry.net/blog/reset-aws-route53-name-servers/</guid>
+      <description>Managing your domain&amp;rsquo;s DNS settings is a crucial aspect of maintaining a robust online presence. AWS Route 53 provides a reliable and scalable domain name system (DNS) service. If you ever need to reset your domain name servers (DNS) in AWS Route 53, follow these step-by-step instructions.&#xA;Prerequisites Before you begin, ensure that you have the necessary permissions to modify DNS settings for your domain. Additionally, make sure you are logged in to the AWS Management Console.</description>
+    </item>
+  </channel>
+</rss>
