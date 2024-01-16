@@ -3,6 +3,7 @@ layout: post
 title: Reset AWS Route 53 NS Records
 author: Michael Minter
 date: 2024-01-14
+locale: en_US
 comments: true
 tags: [AWS, Route 53, Hosted zone, Domain, DNS, Name Servers, NS, DevOps]
 thumbnail: https://images.unsplash.com/photo-1559631274-6075af61815d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVzZXR8ZW58MHwwfDB8fHwy
