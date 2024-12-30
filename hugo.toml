@@ -19,7 +19,7 @@ DefaultContentLanguageInSubdir = false
     languageName = "English"
     [languages.en.params]
       introTitle = "Nice to meet you!"
-      introSubtitle = "I'm Michael Minter&mdash;a seasoned Software Engineer specializing in application development, adept at crafting scalable solutions, and designing robust frameworks. Passionate about innovation, I'm actively exploring the frontier of Artificial Intelligence, integrating cutting-edge technologies to enhance project intelligence and efficiency. 🤖"
+      introSubtitle = "I'm Michael&mdash;a seasoned Software Engineer specializing in application development, adept at crafting scalable solutions, and designing robust frameworks. Passionate about innovation, I'm actively exploring the frontier of Artificial Intelligence, integrating cutting-edge technologies to enhance project intelligence and efficiency. 🤖"
       introPhoto = "/sticker.png"
       logo = "/logo.svg"
     [[languages.en.menu.main]]

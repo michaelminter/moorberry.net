@@ -4,7 +4,7 @@
     <title>Workbench on Moorberry</title>
     <link>https://moorberry.net/tags/workbench/</link>
     <description>Recent content in Workbench on Moorberry</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 13 Apr 2014 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://moorberry.net/tags/workbench/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>https://moorberry.net/blog/database-version-control/</link>
       <pubDate>Sun, 13 Apr 2014 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/blog/database-version-control/</guid>
-      <description>The following steps are meant to capture a snapshot of your development database structure and your staging/production database structure, compare the two, and provide SQL to consolidate the differences.&#xA;This article relates to one of many methods for database version control in a singular or team-based environment.&#xA;MySQL Workbench Having MySQL Workbench is not mandatory for this process. But it&amp;rsquo;s a nice interface to consolidate the suite of tools that MySQL offers.</description>
+      <description>&lt;p&gt;The following steps are meant to capture a snapshot of your development database structure and your staging/production database structure, compare the two, and provide SQL to consolidate the differences.&lt;/p&gt;&#xA;&lt;!-- more --&gt;&#xA;&lt;p&gt;This article relates to one of many methods for &lt;strong&gt;database version control&lt;/strong&gt; in a singular or team-based environment.&lt;/p&gt;&#xA;&lt;h2 id=&#34;mysql-workbench&#34;&gt;MySQL Workbench&lt;/h2&gt;&#xA;&lt;p&gt;Having &lt;strong&gt;MySQL Workbench&lt;/strong&gt; is not mandatory for this process. But it&amp;rsquo;s a nice interface to consolidate the suite of tools that &lt;strong&gt;MySQL&lt;/strong&gt; offers.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

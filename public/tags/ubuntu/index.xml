@@ -4,7 +4,7 @@
     <title>Ubuntu on Moorberry</title>
     <link>https://moorberry.net/tags/ubuntu/</link>
     <description>Recent content in Ubuntu on Moorberry</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 30 Jul 2014 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://moorberry.net/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>https://moorberry.net/blog/search-multiple-directories-with-cd/</link>
       <pubDate>Wed, 30 Jul 2014 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/blog/search-multiple-directories-with-cd/</guid>
-      <description>If you use the command line and frequent a particular directory you can set cd to scan, not just current, but other directories as well.&#xA;Modify ~/.bash_profile by appending directories to the CDPATH environment variable.&#xA;# define base directory for cd command export CDPATH=$CDPATH:$HOME/Repos Restart your terminal session and now you can cd projectDir. cd will reference any subdirectories in the current directory—as well as $HOME/Repos.&#xA;Autotabbing Custom Base Directories You can install an additonal library; bash-completion to use the [tab] key to autocomplete from the cd command.</description>
+      <description>&lt;p&gt;If you use the command line and frequent a particular directory you can set &lt;strong&gt;cd&lt;/strong&gt; to scan, not just current, but other directories as well.&lt;/p&gt;&#xA;&lt;!-- more --&gt;&#xA;&lt;p&gt;Modify &lt;strong&gt;~/.bash_profile&lt;/strong&gt; by appending directories to the &lt;strong&gt;CDPATH&lt;/strong&gt; environment variable.&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#6272a4&#34;&gt;# define base directory for cd command&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;CDPATH&lt;/span&gt;&lt;span style=&#34;color:#ff79c6&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;$CDPATH&lt;/span&gt;:&lt;span style=&#34;color:#8be9fd;font-style:italic&#34;&gt;$HOME&lt;/span&gt;/Repos&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Restart your terminal session and now you can &lt;code&gt;cd projectDir&lt;/code&gt;. &lt;strong&gt;cd&lt;/strong&gt; will reference any subdirectories in the current directory—as well as &lt;strong&gt;$HOME/Repos&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;autotabbing-custom-base-directories&#34;&gt;Autotabbing Custom Base Directories&lt;/h2&gt;&#xA;&lt;p&gt;You can install an additonal library; &lt;strong&gt;bash-completion&lt;/strong&gt; to use the &lt;strong&gt;[tab]&lt;/strong&gt; key to autocomplete from the &lt;strong&gt;cd&lt;/strong&gt; command.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

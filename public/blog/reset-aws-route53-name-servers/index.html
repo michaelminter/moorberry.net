@@ -9,9 +9,10 @@
   Reset AWS Route 53 NS Records - Moorberry
   </title>
   <meta name="description" content="Managing your domain&rsquo;s DNS settings is a crucial aspect of maintaining a robust online presence. AWS Route 53 provides a reliable and scalable domain name system (DNS) service. If you ever need to reset your domain name servers (DNS) in AWS Route 53, follow these step-by-step instructions.
-Prerequisites Before you begin, ensure that you have the necessary permissions to modify DNS settings for your domain. Additionally, make sure you are logged in to the AWS Management Console." />
+Prerequisites
+Before you begin, ensure that you have the necessary permissions to modify DNS settings for your domain. Additionally, make sure you are logged in to the AWS Management Console." />
   <meta name="author" content="Michael Minter" />
-  <meta name="generator" content="Hugo 0.121.2"><link
+  <meta name="generator" content="Hugo 0.140.1"><link
     rel="stylesheet"
     href="https://moorberry.net/css/styles.min.303d46321c48bea2e6b29f914a05d26d22d6ca8db6124799960c58c4caae2d57.css"
     integrity="sha256-MD1GMhxIvqLmsp+RSgXSbSLWyo22EkeZlgxYxMquLVc="
@@ -20,26 +21,38 @@ Prerequisites Before you begin, ensure that you have the necessary permissions t
   
 
   <meta property="og:image" content="https://images.unsplash.com/photo-1559631274-6075af61815d?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVzZXR8ZW58MHwwfDB8fHwy">
-  <meta property="og:title" content="Reset AWS Route 53 NS Records" />
-<meta property="og:description" content="Managing your domain&rsquo;s DNS settings is a crucial aspect of maintaining a robust online presence. AWS Route 53 provides a reliable and scalable domain name system (DNS) service. If you ever need to reset your domain name servers (DNS) in AWS Route 53, follow these step-by-step instructions.
-Prerequisites Before you begin, ensure that you have the necessary permissions to modify DNS settings for your domain. Additionally, make sure you are logged in to the AWS Management Console." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://moorberry.net/blog/reset-aws-route53-name-servers/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2024-01-14T00:00:00+00:00" />
-<meta property="article:modified_time" content="2024-01-14T00:00:00+00:00" /><meta property="og:locale" content="en_US" />
+  <meta property="og:url" content="https://moorberry.net/blog/reset-aws-route53-name-servers/">
+  <meta property="og:site_name" content="Moorberry">
+  <meta property="og:title" content="Reset AWS Route 53 NS Records">
+  <meta property="og:description" content="Managing your domain’s DNS settings is a crucial aspect of maintaining a robust online presence. AWS Route 53 provides a reliable and scalable domain name system (DNS) service. If you ever need to reset your domain name servers (DNS) in AWS Route 53, follow these step-by-step instructions.
+Prerequisites Before you begin, ensure that you have the necessary permissions to modify DNS settings for your domain. Additionally, make sure you are logged in to the AWS Management Console.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2024-01-14T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-01-14T00:00:00+00:00">
+    <meta property="article:tag" content="AWS">
+    <meta property="article:tag" content="Route 53">
+    <meta property="article:tag" content="Hosted Zone">
+    <meta property="article:tag" content="Domain">
+    <meta property="article:tag" content="DNS">
+    <meta property="article:tag" content="Name Servers">
 
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Reset AWS Route 53 NS Records">
+  <meta name="twitter:description" content="Managing your domain’s DNS settings is a crucial aspect of maintaining a robust online presence. AWS Route 53 provides a reliable and scalable domain name system (DNS) service. If you ever need to reset your domain name servers (DNS) in AWS Route 53, follow these step-by-step instructions.
+Prerequisites Before you begin, ensure that you have the necessary permissions to modify DNS settings for your domain. Additionally, make sure you are logged in to the AWS Management Console.">
+      <meta name="twitter:site" content="@mothore">
 
-  <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Reset AWS Route 53 NS Records"/>
-<meta name="twitter:description" content="Managing your domain&rsquo;s DNS settings is a crucial aspect of maintaining a robust online presence. AWS Route 53 provides a reliable and scalable domain name system (DNS) service. If you ever need to reset your domain name servers (DNS) in AWS Route 53, follow these step-by-step instructions.
-Prerequisites Before you begin, ensure that you have the necessary permissions to modify DNS settings for your domain. Additionally, make sure you are logged in to the AWS Management Console."/>
-<meta name="twitter:site" content="@mothore"/>
-
+  
   <meta itemprop="name" content="Reset AWS Route 53 NS Records">
-<meta itemprop="description" content="Managing your domain&rsquo;s DNS settings is a crucial aspect of maintaining a robust online presence. AWS Route 53 provides a reliable and scalable domain name system (DNS) service. If you ever need to reset your domain name servers (DNS) in AWS Route 53, follow these step-by-step instructions.
-Prerequisites Before you begin, ensure that you have the necessary permissions to modify DNS settings for your domain. Additionally, make sure you are logged in to the AWS Management Console."><meta itemprop="datePublished" content="2024-01-14T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2024-01-14T00:00:00+00:00" />
-<meta itemprop="wordCount" content="401">
-<meta itemprop="keywords" content="AWS,Route 53,Hosted zone,Domain,DNS,Name Servers,NS,DevOps," />
+  <meta itemprop="description" content="Managing your domain’s DNS settings is a crucial aspect of maintaining a robust online presence. AWS Route 53 provides a reliable and scalable domain name system (DNS) service. If you ever need to reset your domain name servers (DNS) in AWS Route 53, follow these step-by-step instructions.
+Prerequisites Before you begin, ensure that you have the necessary permissions to modify DNS settings for your domain. Additionally, make sure you are logged in to the AWS Management Console.">
+  <meta itemprop="datePublished" content="2024-01-14T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-01-14T00:00:00+00:00">
+  <meta itemprop="wordCount" content="401">
+  <meta itemprop="keywords" content="AWS,Route 53,Hosted Zone,Domain,DNS,Name Servers,NS,DevOps">
 
   
 </head>
@@ -64,6 +77,12 @@ Prerequisites Before you begin, ensure that you have the necessary permissions t
     <li><a href="/blog/content-delivery-network/">Top Post</a></li>
     
 
+    
+    <li class="flex items-center">
+      
+      
+      
+    </li>
     
 
     
@@ -567,17 +586,20 @@ Prerequisites Before you begin, ensure that you have the necessary permissions t
 <script src="https://moorberry.net/js/scripts.min.js"></script>
 
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0CQGBT41S6"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-0CQGBT41S6', { 'anonymize_ip': false });
-}
-</script>
-
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-0CQGBT41S6"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-0CQGBT41S6');
+        }
+      </script>
 
 
 

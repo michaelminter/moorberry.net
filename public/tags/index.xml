@@ -4,7 +4,7 @@
     <title>Tags on Moorberry</title>
     <link>https://moorberry.net/tags/</link>
     <description>Recent content in Tags on Moorberry</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 14 Jan 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://moorberry.net/tags/index.xml" rel="self" type="application/rss+xml" />
@@ -37,7 +37,7 @@
       <description></description>
     </item>
     <item>
-      <title>Hosted zone</title>
+      <title>Hosted Zone</title>
       <link>https://moorberry.net/tags/hosted-zone/</link>
       <pubDate>Sun, 14 Jan 2024 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/hosted-zone/</guid>
@@ -72,7 +72,7 @@
       <description></description>
     </item>
     <item>
-      <title>cd</title>
+      <title>Cd</title>
       <link>https://moorberry.net/tags/cd/</link>
       <pubDate>Wed, 30 Jul 2014 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/cd/</guid>
@@ -107,42 +107,42 @@
       <description></description>
     </item>
     <item>
-      <title>error</title>
+      <title>Error</title>
       <link>https://moorberry.net/tags/error/</link>
       <pubDate>Tue, 17 Jun 2014 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/error/</guid>
       <description></description>
     </item>
     <item>
-      <title>lock wait</title>
+      <title>Lock Wait</title>
       <link>https://moorberry.net/tags/lock-wait/</link>
       <pubDate>Tue, 17 Jun 2014 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/lock-wait/</guid>
       <description></description>
     </item>
     <item>
-      <title>MySQL</title>
+      <title>Mysql</title>
       <link>https://moorberry.net/tags/mysql/</link>
       <pubDate>Tue, 17 Jun 2014 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/mysql/</guid>
       <description></description>
     </item>
     <item>
-      <title>timeout exceeded</title>
+      <title>Timeout Exceeded</title>
       <link>https://moorberry.net/tags/timeout-exceeded/</link>
       <pubDate>Tue, 17 Jun 2014 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/timeout-exceeded/</guid>
       <description></description>
     </item>
     <item>
-      <title>wait timeout</title>
+      <title>Wait Timeout</title>
       <link>https://moorberry.net/tags/wait-timeout/</link>
       <pubDate>Tue, 17 Jun 2014 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/wait-timeout/</guid>
       <description></description>
     </item>
     <item>
-      <title>installation</title>
+      <title>Installation</title>
       <link>https://moorberry.net/tags/installation/</link>
       <pubDate>Tue, 13 May 2014 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/installation/</guid>
@@ -205,7 +205,7 @@
       <description></description>
     </item>
     <item>
-      <title>database</title>
+      <title>Database</title>
       <link>https://moorberry.net/tags/database/</link>
       <pubDate>Sun, 13 Apr 2014 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/database/</guid>
@@ -226,14 +226,14 @@
       <description></description>
     </item>
     <item>
-      <title>indexes</title>
+      <title>Indexes</title>
       <link>https://moorberry.net/tags/indexes/</link>
       <pubDate>Wed, 15 Jan 2014 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/indexes/</guid>
       <description></description>
     </item>
     <item>
-      <title>indicies</title>
+      <title>Indicies</title>
       <link>https://moorberry.net/tags/indicies/</link>
       <pubDate>Wed, 15 Jan 2014 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/indicies/</guid>
@@ -261,14 +261,14 @@
       <description></description>
     </item>
     <item>
-      <title>geoip</title>
+      <title>Geoip</title>
       <link>https://moorberry.net/tags/geoip/</link>
       <pubDate>Wed, 11 Dec 2013 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/geoip/</guid>
       <description></description>
     </item>
     <item>
-      <title>radial distance</title>
+      <title>Radial Distance</title>
       <link>https://moorberry.net/tags/radial-distance/</link>
       <pubDate>Wed, 11 Dec 2013 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/radial-distance/</guid>
@@ -303,28 +303,28 @@
       <description></description>
     </item>
     <item>
-      <title>troubleshooting</title>
+      <title>Troubleshooting</title>
       <link>https://moorberry.net/tags/troubleshooting/</link>
       <pubDate>Tue, 08 Oct 2013 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/troubleshooting/</guid>
       <description></description>
     </item>
     <item>
-      <title>acts_as_paranoid</title>
+      <title>Acts_as_paranoid</title>
       <link>https://moorberry.net/tags/acts_as_paranoid/</link>
       <pubDate>Thu, 15 Aug 2013 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/acts_as_paranoid/</guid>
       <description></description>
     </item>
     <item>
-      <title>documentation</title>
+      <title>Documentation</title>
       <link>https://moorberry.net/tags/documentation/</link>
       <pubDate>Thu, 15 Aug 2013 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/documentation/</guid>
       <description></description>
     </item>
     <item>
-      <title>gem</title>
+      <title>Gem</title>
       <link>https://moorberry.net/tags/gem/</link>
       <pubDate>Thu, 15 Aug 2013 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/gem/</guid>
@@ -345,14 +345,14 @@
       <description></description>
     </item>
     <item>
-      <title>console</title>
+      <title>Console</title>
       <link>https://moorberry.net/tags/console/</link>
       <pubDate>Mon, 12 Aug 2013 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/console/</guid>
       <description></description>
     </item>
     <item>
-      <title>debugging</title>
+      <title>Debugging</title>
       <link>https://moorberry.net/tags/debugging/</link>
       <pubDate>Mon, 12 Aug 2013 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/debugging/</guid>
@@ -366,21 +366,21 @@
       <description></description>
     </item>
     <item>
-      <title>log</title>
+      <title>Log</title>
       <link>https://moorberry.net/tags/log/</link>
       <pubDate>Mon, 12 Aug 2013 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/log/</guid>
       <description></description>
     </item>
     <item>
-      <title>logging</title>
+      <title>Logging</title>
       <link>https://moorberry.net/tags/logging/</link>
       <pubDate>Mon, 12 Aug 2013 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/logging/</guid>
       <description></description>
     </item>
     <item>
-      <title>excel</title>
+      <title>Excel</title>
       <link>https://moorberry.net/tags/excel/</link>
       <pubDate>Tue, 14 May 2013 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/excel/</guid>
@@ -394,7 +394,7 @@
       <description></description>
     </item>
     <item>
-      <title>openoffice</title>
+      <title>Openoffice</title>
       <link>https://moorberry.net/tags/openoffice/</link>
       <pubDate>Tue, 14 May 2013 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/openoffice/</guid>
@@ -499,7 +499,7 @@
       <description></description>
     </item>
     <item>
-      <title>jQuery</title>
+      <title>JQuery</title>
       <link>https://moorberry.net/tags/jquery/</link>
       <pubDate>Mon, 11 Feb 2013 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/jquery/</guid>
@@ -520,35 +520,35 @@
       <description></description>
     </item>
     <item>
-      <title>annotate</title>
+      <title>Annotate</title>
       <link>https://moorberry.net/tags/annotate/</link>
       <pubDate>Tue, 06 Nov 2012 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/annotate/</guid>
       <description></description>
     </item>
     <item>
-      <title>annotations</title>
+      <title>Annotations</title>
       <link>https://moorberry.net/tags/annotations/</link>
       <pubDate>Tue, 06 Nov 2012 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/annotations/</guid>
       <description></description>
     </item>
     <item>
-      <title>fixme</title>
+      <title>Fixme</title>
       <link>https://moorberry.net/tags/fixme/</link>
       <pubDate>Tue, 06 Nov 2012 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/fixme/</guid>
       <description></description>
     </item>
     <item>
-      <title>notes</title>
+      <title>Notes</title>
       <link>https://moorberry.net/tags/notes/</link>
       <pubDate>Tue, 06 Nov 2012 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/notes/</guid>
       <description></description>
     </item>
     <item>
-      <title>optimize</title>
+      <title>Optimize</title>
       <link>https://moorberry.net/tags/optimize/</link>
       <pubDate>Tue, 06 Nov 2012 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/optimize/</guid>
@@ -562,7 +562,7 @@
       <description></description>
     </item>
     <item>
-      <title>todos</title>
+      <title>Todos</title>
       <link>https://moorberry.net/tags/todos/</link>
       <pubDate>Tue, 06 Nov 2012 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/todos/</guid>
@@ -618,14 +618,14 @@
       <description></description>
     </item>
     <item>
-      <title>manipulation</title>
+      <title>Manipulation</title>
       <link>https://moorberry.net/tags/manipulation/</link>
       <pubDate>Thu, 22 Apr 2010 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/manipulation/</guid>
       <description></description>
     </item>
     <item>
-      <title>modification</title>
+      <title>Modification</title>
       <link>https://moorberry.net/tags/modification/</link>
       <pubDate>Thu, 22 Apr 2010 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/modification/</guid>
@@ -639,35 +639,35 @@
       <description></description>
     </item>
     <item>
-      <title>pre-rendering</title>
+      <title>Pre-Rendering</title>
       <link>https://moorberry.net/tags/pre-rendering/</link>
       <pubDate>Thu, 22 Apr 2010 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/pre-rendering/</guid>
       <description></description>
     </item>
     <item>
-      <title>preloading</title>
+      <title>Preloading</title>
       <link>https://moorberry.net/tags/preloading/</link>
       <pubDate>Thu, 22 Apr 2010 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/preloading/</guid>
       <description></description>
     </item>
     <item>
-      <title>rendering</title>
+      <title>Rendering</title>
       <link>https://moorberry.net/tags/rendering/</link>
       <pubDate>Thu, 22 Apr 2010 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/rendering/</guid>
       <description></description>
     </item>
     <item>
-      <title>scaling</title>
+      <title>Scaling</title>
       <link>https://moorberry.net/tags/scaling/</link>
       <pubDate>Thu, 22 Apr 2010 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/scaling/</guid>
       <description></description>
     </item>
     <item>
-      <title>transforming</title>
+      <title>Transforming</title>
       <link>https://moorberry.net/tags/transforming/</link>
       <pubDate>Thu, 22 Apr 2010 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/transforming/</guid>
@@ -681,21 +681,21 @@
       <description></description>
     </item>
     <item>
-      <title>express checkout</title>
+      <title>Express Checkout</title>
       <link>https://moorberry.net/tags/express-checkout/</link>
       <pubDate>Sat, 03 Apr 2010 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/express-checkout/</guid>
       <description></description>
     </item>
     <item>
-      <title>nvp</title>
+      <title>Nvp</title>
       <link>https://moorberry.net/tags/nvp/</link>
       <pubDate>Sat, 03 Apr 2010 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/nvp/</guid>
       <description></description>
     </item>
     <item>
-      <title>example</title>
+      <title>Example</title>
       <link>https://moorberry.net/tags/example/</link>
       <pubDate>Wed, 24 Mar 2010 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/tags/example/</guid>

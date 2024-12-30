@@ -4,7 +4,7 @@
     <title>Route 53 on Moorberry</title>
     <link>https://moorberry.net/tags/route-53/</link>
     <description>Recent content in Route 53 on Moorberry</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 14 Jan 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://moorberry.net/tags/route-53/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>https://moorberry.net/blog/reset-aws-route53-name-servers/</link>
       <pubDate>Sun, 14 Jan 2024 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/blog/reset-aws-route53-name-servers/</guid>
-      <description>Managing your domain&amp;rsquo;s DNS settings is a crucial aspect of maintaining a robust online presence. AWS Route 53 provides a reliable and scalable domain name system (DNS) service. If you ever need to reset your domain name servers (DNS) in AWS Route 53, follow these step-by-step instructions.&#xA;Prerequisites Before you begin, ensure that you have the necessary permissions to modify DNS settings for your domain. Additionally, make sure you are logged in to the AWS Management Console.</description>
+      <description>&lt;p&gt;Managing your domain&amp;rsquo;s DNS settings is a crucial aspect of maintaining a robust online presence. AWS Route 53 provides a reliable and scalable domain name system (DNS) service. If you ever need to reset your domain name servers (DNS) in AWS Route 53, follow these step-by-step instructions.&lt;/p&gt;&#xA;&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;&#xA;&lt;p&gt;Before you begin, ensure that you have the necessary permissions to modify DNS settings for your domain. Additionally, make sure you are logged in to the AWS Management Console.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

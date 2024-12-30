@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>jQuery on Moorberry</title>
+    <title>JQuery on Moorberry</title>
     <link>https://moorberry.net/tags/jquery/</link>
-    <description>Recent content in jQuery on Moorberry</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in JQuery on Moorberry</description>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 11 Feb 2013 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://moorberry.net/tags/jquery/index.xml" rel="self" type="application/rss+xml" />

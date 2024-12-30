@@ -4,7 +4,7 @@
     <title>USB on Moorberry</title>
     <link>https://moorberry.net/tags/usb/</link>
     <description>Recent content in USB on Moorberry</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 13 May 2014 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://moorberry.net/tags/usb/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>https://moorberry.net/blog/create-linux-install-usb/</link>
       <pubDate>Tue, 13 May 2014 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/blog/create-linux-install-usb/</guid>
-      <description>Create a bootable USB drive, for installing Linux, on your Mac.&#xA;Picking a Linux distro is like picking your favorite flavor of ice cream.&#xA;Find an awesome Linux distribution here distrowatch.com Prepare Convert the .iso file to .img using the convert option of hdiutil&#xA;hdiutil convert -format UDRW -o ~/path/to/target.img ~/path/to/ubuntu.iso Note: OS X tends to put the .dmg ending on the output file automatically.&#xA;Remove the USB drive from your machine if it&amp;rsquo;s currently inserted.</description>
+      <description>&lt;p&gt;Create a bootable USB drive, for installing Linux, on your Mac.&lt;/p&gt;&#xA;&lt;!-- more --&gt;&#xA;&lt;p&gt;Picking a Linux distro is like picking your favorite flavor of ice cream.&lt;/p&gt;&#xA;&lt;p&gt;Find an awesome Linux distribution here &lt;a href=&#34;http://distrowatch.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;distrowatch.com&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;h2 id=&#34;prepare&#34;&gt;Prepare&lt;/h2&gt;&#xA;&lt;p&gt;Convert the .iso file to .img using the convert option of hdiutil&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;hdiutil convert -format UDRW -o ~/path/to/target.img ~/path/to/ubuntu.iso&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; OS X tends to put the .dmg ending on the output file automatically.&lt;/p&gt;&#xA;&lt;p&gt;Remove the USB drive from your machine if it&amp;rsquo;s currently inserted.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

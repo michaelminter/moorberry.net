@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>troubleshooting on Moorberry</title>
+    <title>Troubleshooting on Moorberry</title>
     <link>https://moorberry.net/tags/troubleshooting/</link>
-    <description>Recent content in troubleshooting on Moorberry</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Troubleshooting on Moorberry</description>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 08 Oct 2013 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://moorberry.net/tags/troubleshooting/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>https://moorberry.net/blog/csv-special-character/</link>
       <pubDate>Tue, 08 Oct 2013 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/blog/csv-special-character/</guid>
-      <description>Separate CSV data with a special character (example: thorn þ).&#xA;Google DFP (Double-click for Publishers) uses a special character in their CSV exports. Specifically the thorn character and it&amp;rsquo;s a pain. But Ruby can make it better.&#xA;You can skip to the bottom of this article for the neccessary code or read on from here for more details about figuring out the path to certainty.&#xA;Unicode Find the unicode character. For my example the thorn character þ is represented as u00FE.</description>
+      <description>&lt;p&gt;Separate CSV data with a special character (example: thorn þ).&lt;/p&gt;&#xA;&lt;!-- more --&gt;&#xA;&lt;p&gt;&lt;strong&gt;Google DFP&lt;/strong&gt; (Double-click for Publishers) uses a special character in their CSV exports. Specifically the thorn character and it&amp;rsquo;s a pain. But Ruby can make it better.&lt;/p&gt;&#xA;&lt;p&gt;You can skip to the bottom of this article for the neccessary code or read on from here for more details about figuring out the path to certainty.&lt;/p&gt;&#xA;&lt;h2 id=&#34;unicode&#34;&gt;Unicode&lt;/h2&gt;&#xA;&lt;p&gt;Find the unicode character. For my example the thorn character &lt;strong&gt;þ&lt;/strong&gt; is represented as &lt;strong&gt;u00FE&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

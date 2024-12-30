@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>debugging on Moorberry</title>
+    <title>Debugging on Moorberry</title>
     <link>https://moorberry.net/tags/debugging/</link>
-    <description>Recent content in debugging on Moorberry</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Debugging on Moorberry</description>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 12 Aug 2013 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://moorberry.net/tags/debugging/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>https://moorberry.net/blog/android-javascript-debugging/</link>
       <pubDate>Mon, 12 Aug 2013 00:00:00 +0000</pubDate>
       <guid>https://moorberry.net/blog/android-javascript-debugging/</guid>
-      <description>As a web developer, I have to use console.log a lot to see what&amp;rsquo;s going on with Javascript in my web applications, and Android Browser does not make this an easy task.&#xA;Initial searches brought up articles suggesting use of the Android SDK, plugging my phone into my computer, setting up the debug bridge, et cetera. That&amp;rsquo;s a lot of work.&#xA;There is a way to do Javascript debugging entirely on your phone without the Android SDK.</description>
+      <description>&lt;p&gt;As a web developer, I have to use &lt;code&gt;console.log&lt;/code&gt; a lot to see what&amp;rsquo;s going on with Javascript in my web applications, and Android Browser does &lt;strong&gt;not&lt;/strong&gt; make this &lt;strong&gt;an easy task&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;!-- more --&gt;&#xA;&lt;p&gt;Initial searches brought up articles suggesting use of the Android SDK, plugging my phone into my computer, setting up the debug bridge, et cetera. That&amp;rsquo;s a lot of work.&lt;/p&gt;&#xA;&lt;p&gt;There is a way to do &lt;strong&gt;Javascript debugging&lt;/strong&gt; entirely on your phone &lt;strong&gt;without the Android SDK&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
