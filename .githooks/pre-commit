@@ -16,4 +16,6 @@ if ! command -v pnpm >/dev/null 2>&1; then
 fi
 
 echo "pre-commit: running pnpm build"
-exec pnpm build
+pnpm build
+git add -A -- dist
+echo "pre-commit: staged dist/"
