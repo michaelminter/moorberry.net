@@ -1,0 +1,296 @@
+<div class="hero-atmosphere" data-hero-atmosphere aria-hidden="true">
+  <div class="gas-track gas-track-main">
+    <div class="gas-cloud gas-cloud-main"></div>
+  </div>
+  <div class="gas-track gas-track-satellite">
+    <div class="gas-cloud gas-cloud-satellite"></div>
+  </div>
+  <div class="pointer-haze"></div>
+  <canvas class="glyph-field"></canvas>
+</div>
+
+<style>
+  .hero-atmosphere {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    background: #101010;
+    --cursor-x: 70%;
+    --cursor-y: 30%;
+    --cursor-strength: 0;
+  }
+
+  .hero-atmosphere::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    background:
+      linear-gradient(90deg, rgba(16, 16, 16, 0.54), transparent 62%),
+      linear-gradient(180deg, transparent 52%, #101010 100%);
+  }
+
+  .gas-track {
+    position: absolute;
+    inset: 0;
+    will-change: transform;
+  }
+
+  .gas-cloud {
+    position: absolute;
+    border-radius: 50%;
+    mix-blend-mode: screen;
+    will-change: transform;
+  }
+
+  .gas-cloud-main {
+    top: -27rem;
+    right: -14rem;
+    width: min(78vw, 80rem);
+    height: min(60vw, 56rem);
+    background: radial-gradient(
+      ellipse at 49% 53%,
+      rgba(225, 184, 255, 0.76) 0%,
+      rgba(166, 94, 255, 0.72) 18%,
+      rgba(113, 54, 208, 0.52) 39%,
+      rgba(69, 29, 142, 0.24) 60%,
+      transparent 76%
+    );
+    filter: blur(54px) saturate(1.18);
+    animation: main-gas-drift 17s ease-in-out infinite alternate;
+  }
+
+  .gas-cloud-satellite {
+    top: 31%;
+    right: 5%;
+    width: min(34vw, 26rem);
+    height: min(25vw, 19rem);
+    background: radial-gradient(
+      ellipse at 54% 46%,
+      rgba(229, 177, 255, 0.72),
+      rgba(150, 78, 236, 0.54) 31%,
+      rgba(92, 40, 180, 0.25) 56%,
+      transparent 76%
+    );
+    filter: blur(36px);
+    animation: satellite-gas-drift 12s ease-in-out infinite alternate;
+  }
+
+  .pointer-haze {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: radial-gradient(
+      ellipse 24rem 18rem at var(--cursor-x) var(--cursor-y),
+      rgba(190, 126, 255, 0.16),
+      transparent 75%
+    );
+    opacity: var(--cursor-strength);
+  }
+
+  .glyph-field {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    opacity: 0.68;
+  }
+
+  @keyframes main-gas-drift {
+    0% {
+      transform: translate3d(-3%, 2%, 0) rotate(-11deg) scale(1);
+    }
+    50% {
+      transform: translate3d(3%, -2%, 0) rotate(-5deg) scale(1.08);
+    }
+    100% {
+      transform: translate3d(-1%, 4%, 0) rotate(-14deg) scale(0.98);
+    }
+  }
+
+  @keyframes satellite-gas-drift {
+    0% {
+      transform: translate3d(3%, -4%, 0) rotate(14deg) scale(0.94);
+    }
+    100% {
+      transform: translate3d(-9%, 6%, 0) rotate(-8deg) scale(1.15);
+    }
+  }
+
+  @media (max-width: 640px) {
+    .gas-cloud-main {
+      top: -11rem;
+      right: -15rem;
+      width: 48rem;
+      height: 37rem;
+      filter: blur(46px);
+    }
+
+    .gas-cloud-satellite {
+      top: 31%;
+      right: -15%;
+      width: 20rem;
+      height: 17rem;
+    }
+
+    .glyph-field {
+      display: none;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .gas-cloud {
+      animation: none;
+    }
+    .glyph-field,
+    .pointer-haze {
+      display: none;
+    }
+  }
+</style>
+
+<script>
+  const atmosphere = document.querySelector<HTMLElement>(
+    "[data-hero-atmosphere]",
+  );
+  const shell = atmosphere?.closest<HTMLElement>("[data-hero-shell]");
+  const canvas = atmosphere?.querySelector<HTMLCanvasElement>(".glyph-field");
+  const main = atmosphere?.querySelector<HTMLElement>(".gas-track-main");
+  const satellite = atmosphere?.querySelector<HTMLElement>(
+    ".gas-track-satellite",
+  );
+  const context = canvas?.getContext("2d");
+  const disablePointerEffects = window.matchMedia(
+    "(prefers-reduced-motion: reduce), (hover: none), (pointer: coarse)",
+  ).matches;
+
+  if (
+    atmosphere &&
+    shell &&
+    canvas &&
+    main &&
+    satellite &&
+    context &&
+    !disablePointerEffects
+  ) {
+    const glyphs = ["·", ":", "+", "*", "✦"];
+    const pointer = {
+      x: 0,
+      y: 0,
+      targetX: 0,
+      targetY: 0,
+      strength: 0,
+      targetStrength: 0,
+    };
+    let width = 0;
+    let height = 0;
+    let lastFrame = 0;
+    let inView = true;
+
+    const resize = () => {
+      const rect = shell.getBoundingClientRect();
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      width = rect.width;
+      height = rect.height;
+      canvas.width = Math.max(1, Math.round(width * dpr));
+      canvas.height = Math.max(1, Math.round(height * dpr));
+      context.setTransform(dpr, 0, 0, dpr, 0, 0);
+      context.textAlign = "center";
+      context.textBaseline = "middle";
+      context.font = "12px ui-monospace, SFMono-Regular, Menlo, monospace";
+      if (!pointer.x) {
+        pointer.x = pointer.targetX = width * 0.68;
+        pointer.y = pointer.targetY = height * 0.42;
+      }
+    };
+
+    const onPointerMove = (event: PointerEvent) => {
+      const rect = shell.getBoundingClientRect();
+      const inside =
+        event.clientX >= rect.left &&
+        event.clientX <= rect.right &&
+        event.clientY >= rect.top &&
+        event.clientY <= rect.bottom;
+      pointer.targetStrength = inside ? 1 : 0;
+      if (inside) {
+        pointer.targetX = event.clientX - rect.left;
+        pointer.targetY = event.clientY - rect.top;
+      }
+    };
+
+    const render = (time: number) => {
+      requestAnimationFrame(render);
+      if (document.hidden || !inView || time - lastFrame < 32) return;
+      lastFrame = time;
+
+      pointer.x += (pointer.targetX - pointer.x) * 0.095;
+      pointer.y += (pointer.targetY - pointer.y) * 0.095;
+      pointer.strength += (pointer.targetStrength - pointer.strength) * 0.075;
+
+      const driftX = (pointer.x / width - 0.5) * pointer.strength;
+      const driftY = (pointer.y / height - 0.5) * pointer.strength;
+      main.style.transform = `translate3d(${(-44 * driftX).toFixed(1)}px, ${(-28 * driftY).toFixed(1)}px, 0)`;
+      satellite.style.transform = `translate3d(${(38 * driftX).toFixed(1)}px, ${(30 * driftY).toFixed(1)}px, 0)`;
+      atmosphere.style.setProperty("--cursor-x", `${pointer.x.toFixed(1)}px`);
+      atmosphere.style.setProperty("--cursor-y", `${pointer.y.toFixed(1)}px`);
+      atmosphere.style.setProperty(
+        "--cursor-strength",
+        pointer.strength.toFixed(3),
+      );
+
+      context.clearRect(0, 0, width, height);
+      const spacing = 29;
+      const cols = Math.ceil(width / spacing);
+      const rows = Math.ceil(height / spacing);
+      const radius = Math.min(width, height) * 0.38;
+      const phase = time * 0.00055;
+
+      for (let row = 0; row < rows; row++) {
+        for (let col = 0; col < cols; col++) {
+          const baseX = col * spacing + (row % 2) * 7;
+          const baseY = row * spacing + 6;
+          const dx = pointer.x - baseX;
+          const dy = pointer.y - baseY;
+          const distance = Math.hypot(dx, dy);
+          const influence =
+            Math.max(0, 1 - distance / radius) * pointer.strength;
+          const wave =
+            Math.sin(col * 0.47 + row * 0.25 + phase) +
+            Math.cos(row * 0.51 - col * 0.13 - phase * 0.8);
+          const seed = (col * 17 + row * 23) % 7;
+          if (seed > 2 && influence < 0.15) continue;
+
+          const index = Math.min(
+            glyphs.length - 1,
+            Math.max(0, Math.floor((wave + 2) * 0.65 + influence * 2)),
+          );
+          const displacement = influence * 10;
+          const x =
+            baseX -
+            (distance ? (dx / distance) * displacement : 0) +
+            Math.sin(phase + row) * 1.5;
+          const y =
+            baseY -
+            (distance ? (dy / distance) * displacement : 0) +
+            Math.cos(phase + col) * 1.5;
+          context.fillStyle = `rgba(205, 166, 255, ${(0.1 + influence * 0.43).toFixed(3)})`;
+          context.fillText(glyphs[index], x, y);
+        }
+      }
+    };
+
+    resize();
+    new ResizeObserver(resize).observe(shell);
+    new IntersectionObserver(([entry]) => {
+      inView = entry.isIntersecting;
+      if (!inView) pointer.targetStrength = 0;
+    }).observe(shell);
+    window.addEventListener("pointermove", onPointerMove, { passive: true });
+    window.addEventListener("pointerleave", () => {
+      pointer.targetStrength = 0;
+    });
+    requestAnimationFrame(render);
+  }
+</script>

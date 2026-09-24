@@ -1,0 +1,16 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Nav from "@/components/nav.astro";
+import Footer from "@/components/footer.astro";
+---
+
+<Layout title="Page not found">
+  <Nav />
+  <main class="max-w-3xl mx-auto pt-32 md:pt-44 pb-20 min-h-[65vh]">
+    <p class="text-[var(--sec)] mb-3">404</p>
+    <h1 class="text-4xl md:text-5xl mb-7">Page not found</h1>
+    <p class="text-[var(--white-icon)] mb-7">That page isn't here. Browse the articles or return home.</p>
+    <div class="flex gap-5 text-[var(--sec)]"><a href="/">Home ↗</a><a href="/articles/">Articles ↗</a></div>
+  </main>
+  <Footer />
+</Layout>

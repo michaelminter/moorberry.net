@@ -1,0 +1,103 @@
+---
+const technologies = [
+  "astro",
+  "mongoDB",
+  "claude",
+  "react",
+  "docker",
+  "swift",
+  "typeScript",
+  "redis",
+  "tailwindcss",
+  "openAI",
+  "postgres",
+  "nodejs",
+  "kotlin",
+  "neo4j",
+  "HTML5",
+  "grok",
+  "python",
+  "CSS3",
+  "flutter",
+  "rails",
+  "javaScript",
+  "perl",
+  "git",
+  "FHIR",
+  "mysql",
+  "elixir",
+  "bash",
+];
+
+const labels: Record<string, string> = {
+  rails: "Ruby on Rails",
+};
+---
+
+<div class="logo-wall relative overflow-x-hidden py-8">
+  <div class="flex animate-scroll w-max will-change-transform">
+    {
+      [...technologies, ...technologies].map((tech, index) => (
+        <div
+          class="flex items-center gap-2 pr-12 md:pr-20 group transition-all duration-300"
+          aria-hidden={index >= technologies.length ? "true" : "false"}
+        >
+          <img
+            src={`/svg/${tech}.svg`}
+            alt={tech}
+            class="h-7 w-auto object-contain transition-transform group-hover:scale-110 opacity-60"
+            width="30"
+            height="30"
+            loading={index < technologies.length ? "eager" : "lazy"}
+            decoding="async"
+          />
+          <span class="text-lg font-medium text-[var(--white-icon)] whitespace-nowrap">
+            {labels[tech] ?? tech.charAt(0).toUpperCase() + tech.slice(1)}
+          </span>
+        </div>
+      ))
+    }
+  </div>
+</div>
+
+<style is:global>
+  .logo-wall {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent,
+      #000 12%,
+      #000 88%,
+      transparent
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      #000 12%,
+      #000 88%,
+      transparent
+    );
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+  .animate-scroll {
+    animation: scroll 140s linear infinite;
+  }
+
+  @media (min-width: 768px) {
+    .animate-scroll {
+      animation-duration: 120s;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .animate-scroll {
+      animation: none;
+    }
+  }
+</style>

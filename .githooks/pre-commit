@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+set -e
+
+repo_root=$(git rev-parse --show-toplevel)
+cd "$repo_root"
+
+nvm_script="${NVM_DIR:-$HOME/.nvm}/nvm.sh"
+if [ -r "$nvm_script" ]; then
+  . "$nvm_script"
+  nvm use --silent >/dev/null
+fi
+
+if ! command -v pnpm >/dev/null 2>&1; then
+  echo "pre-commit: pnpm is required to run the build" >&2
+  exit 1
+fi
+
+echo "pre-commit: running pnpm build"
+exec pnpm build

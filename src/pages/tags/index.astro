@@ -1,0 +1,31 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Nav from "@/components/nav.astro";
+import Footer from "@/components/footer.astro";
+import { getCollection } from "astro:content";
+import { groupByTag } from "../../lib/tags";
+
+const posts = await getCollection("blog", ({ data }) => !data.draft);
+const tags = [...groupByTag(posts)].sort((a, b) => a[1].name.localeCompare(b[1].name));
+---
+
+<Layout title="Topics">
+  <Nav />
+  <main class="max-w-5xl mx-auto pt-28 md:pt-40 pb-20 min-h-[65vh]">
+    <p class="text-lg text-[var(--sec)] mb-2">Writing</p>
+    <h1 class="text-4xl md:text-5xl font-medium mb-8">Topics</h1>
+    <div class="tag-list">
+      {tags.map(([slug, group]) => (
+        <a href={`/tags/${slug}/`}><span>{group.name}</span><span>{String(group.posts.length).padStart(2, "0")}</span></a>
+      ))}
+    </div>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  .tag-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr)); border-top: 1px solid #ffffff30; }
+  .tag-list a { display: flex; justify-content: space-between; gap: 1rem; padding: .9rem .7rem; border-bottom: 1px solid #ffffff20; color: var(--white); text-decoration: none; font-size: .85rem; }
+  .tag-list a:hover { color: var(--sec); background: #a476ff13; }
+  .tag-list a span:last-child { color: #888; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+</style>

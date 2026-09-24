@@ -1,0 +1,22 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="w-full py-10 border-t border-[#ffffff10]">
+  <div class="max-w-5xl mx-auto flex flex-col sm:flex-row justify-between gap-5 text-sm text-[var(--white-icon)]">
+    <p>© {year} Michael Minter · Moorberry</p>
+    <div class="flex flex-wrap gap-x-5 gap-y-2">
+      <a href="/articles/">Articles</a>
+      <a href="/MichaelMinterSoft.pdf">Resume</a>
+      <a href="https://x.com/mothore" target="_blank" rel="noopener noreferrer">X @mothore</a>
+    </div>
+  </div>
+  <div class="max-w-5xl mx-auto mt-5 text-xs text-[#777]">
+    Portfolio design adapted from <a href="https://github.com/Gothsec" target="_blank" rel="noopener noreferrer">Andres Hernandez</a> / ThemeWagon.
+  </div>
+</footer>
+
+<style>
+  a { color: inherit; text-decoration: none; }
+  a:hover { color: var(--white); text-decoration: underline; }
+</style>

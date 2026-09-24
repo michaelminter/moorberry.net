@@ -1,0 +1,97 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+  posts: CollectionEntry<"blog">[];
+  fullArchive?: boolean;
+  compactHeading?: boolean;
+  heading?: string;
+  eyebrow?: string;
+}
+
+const { posts, fullArchive = false, compactHeading = false, heading = "Articles", eyebrow = "Writing" } = Astro.props;
+const dateFormat = new Intl.DateTimeFormat("en-US", {
+  year: "numeric",
+  month: "short",
+  day: "2-digit",
+  timeZone: "UTC",
+});
+---
+
+<section id="articles" class="archive-section py-12 border-t border-[#ffffff10]">
+  <div class="max-w-5xl mx-auto">
+    {!compactHeading && <p class="text-lg text-[var(--sec)] mb-2 shiny-sec">{eyebrow}</p>}
+    <div class:list={["flex flex-wrap justify-between gap-3 mb-7", { "items-baseline": compactHeading, "items-end": !compactHeading }]}>
+      {compactHeading
+        ? <h1 class="font-mono text-xs font-normal uppercase tracking-[.1em] leading-normal text-[var(--sec)]">{heading}</h1>
+        : <h2 class="text-4xl md:text-5xl font-medium">{heading}</h2>}
+      <span class="archive-count">{String(posts.length).padStart(2, "0")} threads</span>
+    </div>
+    <div class="archive" aria-label="Articles">
+      <div class="archive-header" aria-hidden="true">
+        <span>Posted</span><span>Subject</span><span>Topics</span><span></span>
+      </div>
+      {posts.map((post) => (
+        <a class="archive-row" href={`/articles/${post.id}/`}>
+          <time datetime={post.data.date.toISOString()}>{dateFormat.format(post.data.date)}</time>
+          <span class="archive-title">{post.data.title}</span>
+          <span class="archive-tags">{post.data.tags?.slice(0, 2).join(" / ") || "General"}</span>
+          <span class="archive-arrow" aria-hidden="true">↗</span>
+        </a>
+      ))}
+    </div>
+    {!fullArchive && (
+      <a class="archive-more" href="/articles/">Browse all articles <span aria-hidden="true">↗</span></a>
+    )}
+  </div>
+</section>
+
+<style>
+  .archive-section { scroll-margin-top: 7rem; }
+  .archive { border-top: 1px solid #ffffff36; border-bottom: 1px solid #ffffff36; }
+  .archive-header, .archive-row {
+    display: grid;
+    grid-template-columns: 8.5rem minmax(0, 1fr) 11.5rem 1.4rem;
+    align-items: baseline;
+    gap: 1rem;
+  }
+  .archive-header, .archive-count, .archive-row time, .archive-tags, .archive-arrow, .archive-more {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  .archive-header {
+    padding: .65rem .8rem;
+    color: #a0a0a0;
+    font-size: .69rem;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+  }
+  .archive-count { color: #9d9d9d; font-size: .75rem; text-transform: uppercase; letter-spacing: .1em; }
+  .archive-row {
+    padding: .8rem;
+    border-top: 1px solid #ffffff16;
+    color: var(--white);
+    text-decoration: none;
+    transition: background-color .2s ease;
+  }
+  .archive-row:hover, .archive-row:focus-visible { background: #a476ff13; }
+  .archive-row:hover .archive-title, .archive-row:focus-visible .archive-title { color: #cbb2ff; }
+  .archive-row time, .archive-tags { color: #999; font-size: .75rem; white-space: nowrap; }
+  .archive-title { font-size: .9rem; font-weight: 550; line-height: 1.4; }
+  .archive-tags { overflow: hidden; text-overflow: ellipsis; }
+  .archive-arrow { color: var(--sec); font-size: 1rem; text-align: right; }
+  .archive-more {
+    display: inline-flex;
+    gap: .7rem;
+    margin-top: 1.25rem;
+    color: var(--sec);
+    font-size: .83rem;
+    text-decoration: none;
+  }
+  .archive-more:hover { text-decoration: underline; }
+  @media (max-width: 700px) {
+    .archive-header, .archive-row { grid-template-columns: 6.6rem minmax(0, 1fr) 1rem; gap: .55rem; }
+    .archive-header span:nth-child(3), .archive-tags { display: none; }
+    .archive-row time { font-size: .67rem; }
+    .archive-title { font-size: .82rem; }
+  }
+</style>

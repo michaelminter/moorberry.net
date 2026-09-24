@@ -1,0 +1,62 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Nav from "@/components/nav.astro";
+import Footer from "@/components/footer.astro";
+import { getCollection, render, type CollectionEntry } from "astro:content";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog", ({ data }) => !data.draft);
+  return posts.map((post) => ({ params: { id: post.id }, props: { post } }));
+}
+
+const { post } = Astro.props as { post: CollectionEntry<"blog"> };
+const { Content } = await render(post);
+const formattedDate = new Intl.DateTimeFormat("en-US", {
+  year: "numeric", month: "long", day: "numeric", timeZone: "UTC",
+}).format(post.data.date);
+---
+
+<Layout title={post.data.title} description={post.data.description || `${post.data.title}, an article by Michael Minter.`}>
+  <Nav />
+  <main class="max-w-3xl mx-auto pt-32 md:pt-44 pb-20">
+    <a href="/articles/" class="back-link">← All articles</a>
+    <article>
+      <header class="article-header">
+        <p class="eyebrow">Moorberry / Articles</p>
+        <h1>{post.data.title}</h1>
+        <div class="metadata">
+          <time datetime={post.data.date.toISOString()}>{formattedDate}</time>
+          {post.data.tags && <span>{post.data.tags.join(" · ")}</span>}
+        </div>
+      </header>
+      <div class="article-body"><Content /></div>
+    </article>
+    <a href="/articles/" class="back-link bottom-link">← Back to all articles</a>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  .back-link, .eyebrow, .metadata { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  .back-link { color: var(--sec); font-size: .84rem; text-decoration: none; }
+  .back-link:hover { text-decoration: underline; }
+  .article-header { margin: 2.5rem 0 2rem; border-bottom: 1px solid #ffffff25; padding-bottom: 1.5rem; }
+  .eyebrow { color: var(--sec); font-size: .75rem; text-transform: uppercase; letter-spacing: .12em; }
+  h1 { font-size: clamp(2.3rem, 6vw, 4.4rem); line-height: 1.08; letter-spacing: -.035em; margin: 1rem 0 1.4rem; }
+  .metadata { display: flex; flex-wrap: wrap; gap: .7rem 1.5rem; color: #999; font-size: .75rem; }
+  .bottom-link { display: inline-block; margin-top: 3rem; }
+  .article-body { color: #c8c8c8; font-size: 1rem; line-height: 1.8; overflow-wrap: anywhere; }
+  .article-body :global(h2), .article-body :global(h3) { color: var(--white); line-height: 1.3; margin: 2rem 0 .8rem; }
+  .article-body :global(h2) { font-size: 1.55rem; }
+  .article-body :global(h3) { font-size: 1.25rem; }
+  .article-body :global(p), .article-body :global(ul), .article-body :global(ol), .article-body :global(pre), .article-body :global(blockquote) { margin: 0 0 1.25rem; }
+  .article-body :global(a) { color: #c4a5ff; }
+  .article-body :global(img) { max-width: 100%; height: auto; }
+  .article-body :global(pre) { padding: 1rem; overflow-x: auto; border: 1px solid #ffffff20; background: #191919 !important; border-radius: .5rem; font-size: .85rem; line-height: 1.5; }
+  .article-body :global(code) { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  .article-body :global(:not(pre) > code) { color: #d4bfff; background: #ffffff12; padding: .12rem .3rem; border-radius: .2rem; }
+  .article-body :global(blockquote) { padding-left: 1rem; border-left: 2px solid var(--sec); color: #aaa; }
+  .article-body :global(ul), .article-body :global(ol) { padding-left: 1.5rem; }
+  .article-body :global(table) { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; margin-bottom: 1.5rem; }
+  .article-body :global(th), .article-body :global(td) { border: 1px solid #ffffff26; padding: .45rem .7rem; text-align: left; }
+</style>

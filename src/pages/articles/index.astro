@@ -1,0 +1,25 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Articles from "@/components/articles.astro";
+import Footer from "@/components/footer.astro";
+import "@/styles/articles-header.css";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("blog"))
+  .filter((post) => !post.data.draft)
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+---
+
+<Layout title="Articles" description="Articles by Michael Minter on software, databases, and web development.">
+  <main class="min-h-[65vh]">
+    <header class="articles-header -mx-9 sm:-mx-28 lg:-mx-20">
+      <div class="px-9 sm:px-28 lg:px-20">
+        <div class="max-w-5xl mx-auto">
+          <a href="/" class="site-mark">Moorberry</a>
+        </div>
+      </div>
+    </header>
+    <Articles posts={posts} fullArchive compactHeading />
+  </main>
+  <Footer />
+</Layout>

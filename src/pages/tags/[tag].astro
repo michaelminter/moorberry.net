@@ -1,0 +1,28 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Nav from "@/components/nav.astro";
+import Articles from "@/components/articles.astro";
+import Footer from "@/components/footer.astro";
+import { getCollection, type CollectionEntry } from "astro:content";
+import { groupByTag } from "../../lib/tags";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog", ({ data }) => !data.draft);
+  return [...groupByTag(posts)].map(([tag, group]) => ({
+    params: { tag },
+    props: { name: group.name, posts: group.posts },
+  }));
+}
+
+const { name, posts } = Astro.props as { name: string; posts: CollectionEntry<"blog">[] };
+posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+---
+
+<Layout title={`Articles tagged ${name}`}>
+  <Nav />
+  <main class="pt-28 md:pt-40 min-h-[65vh]">
+    <Articles posts={posts} fullArchive heading={name} eyebrow="Topic archive" />
+    <div class="max-w-5xl mx-auto pb-10"><a href="/tags/" class="text-[var(--sec)] text-sm">← All topics</a></div>
+  </main>
+  <Footer />
+</Layout>
