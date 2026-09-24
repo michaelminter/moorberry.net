@@ -24,7 +24,7 @@ pnpm build
 git add -A dist
 ```
 
-The Amplify build spec does not invoke Node.js or install dependencies; it only publishes the committed files in `dist/`.
+The Amplify build spec does not invoke Node.js or install dependencies; it only publishes the committed files in `dist/`. The Amplify app is configured with `public` as its monorepo app root, so `amplify.yml` matches that setting and uses `buildPath: /` to locate `dist/` at the repository root.
 
 ## Commit hook
 

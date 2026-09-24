@@ -1,6 +1,9 @@
 version: 1
-frontend:
-  artifacts:
-    baseDirectory: dist
-    files:
-      - '**/*'
+applications:
+  - appRoot: public
+    frontend:
+      buildPath: /
+      artifacts:
+        baseDirectory: dist
+        files:
+          - '**/*'
