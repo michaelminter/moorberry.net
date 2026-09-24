@@ -50,18 +50,30 @@ const projects: Project[] = [
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       {
         projects.map((project) => (
-          <div class="group">
+          <div>
             <a
               href={project.preview}
               target="_blank"
               rel="noopener noreferrer"
-              class="block"
+              class="project-link block"
             >
-              <div class="relative aspect-[1200/630] rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 mb-4">
+              <div class="project-image relative aspect-[1200/630] rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 mb-4">
                 <img
                   src={project.image}
                   alt={project.title}
-                  class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  class="absolute inset-0 w-full h-full object-cover"
+                />
+                <img
+                  src={project.image}
+                  alt=""
+                  aria-hidden="true"
+                  class="project-glitch project-glitch-cyan absolute inset-0 w-full h-full object-cover pointer-events-none"
+                />
+                <img
+                  src={project.image}
+                  alt=""
+                  aria-hidden="true"
+                  class="project-glitch project-glitch-pink absolute inset-0 w-full h-full object-cover pointer-events-none"
                 />
               </div>
             </a>
@@ -138,3 +150,62 @@ const projects: Project[] = [
     </a>
   </div>
 </section>
+
+<style>
+  .project-glitch {
+    opacity: 0;
+  }
+
+  .project-image:hover .project-glitch-cyan,
+  .project-link:focus-visible .project-glitch-cyan {
+    animation: glitch-cyan 440ms steps(1, end) both;
+  }
+
+  .project-image:hover .project-glitch-pink,
+  .project-link:focus-visible .project-glitch-pink {
+    animation: glitch-pink 440ms steps(1, end) both;
+  }
+
+  @keyframes glitch-cyan {
+    0%, 100% { opacity: 0; }
+    12% {
+      opacity: .8;
+      clip-path: inset(13% 0 67% 0);
+      transform: translateX(-9px);
+      filter: drop-shadow(5px 0 #48e8e2);
+    }
+    27% { opacity: 0; }
+    38% {
+      opacity: .9;
+      clip-path: inset(59% 0 24% 0);
+      transform: translateX(7px);
+      filter: drop-shadow(-5px 0 #48e8e2);
+    }
+    54%, 100% { opacity: 0; }
+  }
+
+  @keyframes glitch-pink {
+    0%, 19% { opacity: 0; }
+    20% {
+      opacity: .85;
+      clip-path: inset(37% 0 47% 0);
+      transform: translateX(10px);
+      filter: drop-shadow(-5px 0 #ef5da8);
+    }
+    34% { opacity: 0; }
+    48% {
+      opacity: .8;
+      clip-path: inset(78% 0 8% 0);
+      transform: translateX(-6px);
+      filter: drop-shadow(5px 0 #ef5da8);
+    }
+    64%, 100% { opacity: 0; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .project-image:hover .project-glitch,
+    .project-link:focus-visible .project-glitch {
+      animation: none;
+    }
+  }
+</style>
