@@ -1,0 +1,63 @@
+---
+import LetterGlitch from "../React/LetterGlitch.tsx";
+
+const encodedEmail = "bWljaGFlbEBtb29yYmVycnkubmV0";
+---
+
+<section
+  aria-labelledby="work-on-heading"
+  class="relative isolate -mx-9 mt-12 sm:-mx-28 lg:-mx-20 min-h-[380px] overflow-hidden"
+>
+  <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+    <LetterGlitch
+      client:load
+      glitchColors={["#5e4491", "#A476FF", "#241a38"]}
+      glitchSpeed={33}
+      centerVignette={false}
+      outerVignette={true}
+      smooth={true}
+    />
+  </div>
+  <div class="absolute inset-0 bg-black/60 pointer-events-none" aria-hidden="true"></div>
+  <div class="relative z-10 flex min-h-[380px] flex-col items-center justify-center gap-6 px-9 py-12 text-center sm:px-28 lg:px-20">
+    <h2 id="work-on-heading" class="text-sm font-medium text-[var(--white)]">
+      Click here to message me
+    </h2>
+    <a
+      href="#"
+      id="email-link"
+      data-encoded={encodedEmail}
+      aria-label="Send email"
+      class="inline-flex max-w-full items-center justify-center gap-3 rounded-2xl border border-white bg-black px-5 py-5 text-sm text-white transition-colors hover:bg-[#181818] sm:px-8 sm:text-base"
+    >
+      <svg
+        aria-hidden="true"
+        class="size-5 shrink-0"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.8"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <rect x="3" y="5" width="18" height="14" rx="2" />
+        <path d="m3 7 9 6 9-6" />
+      </svg>
+      <span class="min-w-0 break-all">{encodedEmail}</span>
+    </a>
+  </div>
+</section>
+
+<script>
+  const emailLink = document.getElementById("email-link");
+
+  if (emailLink) {
+    emailLink.addEventListener("click", (event) => {
+      event.preventDefault();
+
+      const email = atob(emailLink.dataset.encoded ?? "");
+      window.location.href = `mailto:${email}`;
+    });
+  }
+</script>

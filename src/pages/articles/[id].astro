@@ -1,6 +1,5 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import Nav from "@/components/nav.astro";
 import Footer from "@/components/footer.astro";
 import { getCollection, render, type CollectionEntry } from "astro:content";
 
@@ -17,12 +16,12 @@ const formattedDate = new Intl.DateTimeFormat("en-US", {
 ---
 
 <Layout title={post.data.title} description={post.data.description || `${post.data.title}, an article by Michael Minter.`}>
-  <Nav />
-  <main class="max-w-3xl mx-auto pt-32 md:pt-44 pb-20">
-    <a href="/articles/" class="back-link">← All articles</a>
+  <main class="max-w-3xl mx-auto pt-12 md:pt-16 pb-20">
     <article>
       <header class="article-header">
-        <p class="eyebrow">Moorberry / Articles</p>
+        <nav class="eyebrow" aria-label="Breadcrumb">
+          <a href="/">Moorberry</a> / <a href="/articles/">Articles</a>
+        </nav>
         <h1>{post.data.title}</h1>
         <div class="metadata">
           <time datetime={post.data.date.toISOString()}>{formattedDate}</time>
@@ -33,15 +32,17 @@ const formattedDate = new Intl.DateTimeFormat("en-US", {
     </article>
     <a href="/articles/" class="back-link bottom-link">← Back to all articles</a>
   </main>
-  <Footer />
+  <Footer showTopBorder={false} />
 </Layout>
 
 <style>
   .back-link, .eyebrow, .metadata { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
   .back-link { color: var(--sec); font-size: .84rem; text-decoration: none; }
   .back-link:hover { text-decoration: underline; }
-  .article-header { margin: 2.5rem 0 2rem; border-bottom: 1px solid #ffffff25; padding-bottom: 1.5rem; }
+  .article-header { margin: 0 0 2rem; border-bottom: 1px solid #ffffff25; padding-bottom: 1.5rem; }
   .eyebrow { color: var(--sec); font-size: .75rem; text-transform: uppercase; letter-spacing: .12em; }
+  .eyebrow a { color: inherit; text-decoration: none; }
+  .eyebrow a:hover { text-decoration: underline; }
   h1 { font-size: clamp(2.3rem, 6vw, 4.4rem); line-height: 1.08; letter-spacing: -.035em; margin: 1rem 0 1.4rem; }
   .metadata { display: flex; flex-wrap: wrap; gap: .7rem 1.5rem; color: #999; font-size: .75rem; }
   .bottom-link { display: inline-block; margin-top: 3rem; }

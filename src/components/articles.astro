@@ -18,12 +18,14 @@ const dateFormat = new Intl.DateTimeFormat("en-US", {
 });
 ---
 
-<section id="articles" class="archive-section py-12 border-t border-[#ffffff10]">
+<section id="articles" class:list={["archive-section py-12", { "border-t border-[#ffffff10]": fullArchive }]}>
   <div class="max-w-5xl mx-auto">
     {!compactHeading && <p class="text-lg text-[var(--sec)] mb-2 shiny-sec">{eyebrow}</p>}
     <div class:list={["flex flex-wrap justify-between gap-3 mb-7", { "items-baseline": compactHeading, "items-end": !compactHeading }]}>
       {compactHeading
-        ? <h1 class="font-mono text-xs font-normal uppercase tracking-[.1em] leading-normal text-[var(--sec)]">{heading}</h1>
+        ? <h1 class="font-mono text-xs font-normal uppercase tracking-[.1em] leading-normal text-[var(--sec)]">
+            {fullArchive && <><a class="archive-home-link" href="/">Moorberry</a>{" / "}</>}{heading}
+          </h1>
         : <h2 class="text-4xl md:text-5xl font-medium">{heading}</h2>}
       <span class="archive-count">{String(posts.length).padStart(2, "0")} threads</span>
     </div>
@@ -48,6 +50,8 @@ const dateFormat = new Intl.DateTimeFormat("en-US", {
 
 <style>
   .archive-section { scroll-margin-top: 7rem; }
+  .archive-home-link { color: inherit; text-decoration: none; }
+  .archive-home-link:hover { text-decoration: underline; }
   .archive { border-top: 1px solid #ffffff36; border-bottom: 1px solid #ffffff36; }
   .archive-header, .archive-row {
     display: grid;

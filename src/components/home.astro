@@ -1,8 +1,6 @@
 ---
-import LetterGlitch from "../React/LetterGlitch.tsx";
 import HeroAtmosphere from "./heroAtmosphere.astro";
 import LogoWall from "../components/logoWall.astro";
-import SkillsList from "../React/SkillsList.tsx";
 ---
 
 <section class="text-[var(--white)]" id="home">
@@ -91,31 +89,6 @@ import SkillsList from "../React/SkillsList.tsx";
         </div>
 
         <LogoWall />
-      </div>
-    </div>
-  </div>
-
-  <div
-    class="relative isolate -mx-9 sm:-mx-28 lg:-mx-20 min-h-[380px] overflow-hidden border-y border-[#ffffff10]"
-  >
-    <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
-      <LetterGlitch
-        client:load
-        glitchColors={["#5e4491", "#A476FF", "#241a38"]}
-        glitchSpeed={33}
-        centerVignette={false}
-        outerVignette={true}
-        smooth={true}
-      />
-    </div>
-    <div
-      class="absolute inset-0 bg-black/60 pointer-events-none"
-      aria-hidden="true"
-    >
-    </div>
-    <div class="relative z-10 px-9 sm:px-28 lg:px-20">
-      <div class="max-w-5xl mx-auto py-5 md:py-6">
-        <SkillsList client:load />
       </div>
     </div>
   </div>
