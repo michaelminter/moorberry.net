@@ -10,12 +10,27 @@ if [ -r "$nvm_script" ]; then
   nvm use --silent >/dev/null
 fi
 
-if ! command -v pnpm >/dev/null 2>&1; then
+pnpm_bin=$(command -v pnpm || true)
+if [ -z "$pnpm_bin" ]; then
+  for candidate in \
+    "${PNPM_HOME:+$PNPM_HOME/pnpm}" \
+    "${PNPM_HOME:+$PNPM_HOME/bin/pnpm}" \
+    "$HOME/Library/pnpm/bin/pnpm" \
+    "$HOME/Library/pnpm/pnpm" \
+    "$HOME/.local/share/pnpm/pnpm"; do
+    if [ -x "$candidate" ]; then
+      pnpm_bin=$candidate
+      break
+    fi
+  done
+fi
+
+if [ -z "$pnpm_bin" ]; then
   echo "pre-commit: pnpm is required to run the build" >&2
   exit 1
 fi
 
 echo "pre-commit: running pnpm build"
-pnpm build
+"$pnpm_bin" build
 git add -A -- dist
 echo "pre-commit: staged dist/"
