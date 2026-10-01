@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="650" viewBox="0 0 1100 650" role="img" aria-labelledby="title">
+<title id="title">PostgreSQL primary key benchmark: 1000000 rows per table</title>
+<rect width="1100" height="650" fill="white"/>
+<g font-family="sans-serif" fill="#222">
+<text x="40" y="40" font-size="22">PostgreSQL primary key benchmark — 1000000 rows per table</text>
+<text x="40" y="80" font-size="18">Insert duration (seconds)</text>
+<line x1="235" y1="100" x2="235" y2="290" stroke="#999"/>
+<text x="40" y="123" font-size="15">UUID PK (ULID)</text>
+<rect x="235" y="100" width="621.54" height="35" fill="#1f77b4"/>
+<text x="866.54" y="123" font-size="14">2.344069s</text>
+<text x="40" y="183" font-size="15">BYTEA PK (ULID)</text>
+<rect x="235" y="160" width="650.00" height="35" fill="#1f77b4"/>
+<text x="895.00" y="183" font-size="14">2.451393s</text>
+<text x="40" y="243" font-size="15">UUIDv7</text>
+<rect x="235" y="220" width="578.32" height="35" fill="#1f77b4"/>
+<text x="823.32" y="243" font-size="14">2.181042s</text>
+<text x="230" y="305" font-size="12">0</text>
+<text x="40" y="355" font-size="18">Average SELECT duration (seconds)</text>
+<line x1="235" y1="375" x2="235" y2="565" stroke="#999"/>
+<text x="40" y="398" font-size="15">UUID PK (ULID)</text>
+<rect x="235" y="375" width="561.68" height="35" fill="#d86f0a"/>
+<text x="806.68" y="398" font-size="14">0.043426s</text>
+<text x="40" y="458" font-size="15">BYTEA PK (ULID)</text>
+<rect x="235" y="435" width="650.00" height="35" fill="#d86f0a"/>
+<text x="895.00" y="458" font-size="14">0.050254s</text>
+<text x="40" y="518" font-size="15">UUIDv7</text>
+<rect x="235" y="495" width="556.63" height="35" fill="#d86f0a"/>
+<text x="801.63" y="518" font-size="14">0.043035s</text>
+<text x="230" y="580" font-size="12">0</text>
+</g>
+</svg>
