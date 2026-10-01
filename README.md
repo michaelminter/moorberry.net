@@ -6,6 +6,14 @@ Michael Minter's portfolio and article archive, built with Astro. The home page 
 
 Requires Node.js 22.12+ and pnpm 9+.
 
+If you use nvm, select the version pinned in `.nvmrc` before running pnpm:
+
+```sh
+nvm use
+```
+
+If that version isn't installed yet, run `nvm install` first. The `.nvmrc` file does not switch Node versions automatically.
+
 ```sh
 pnpm install
 pnpm dev
